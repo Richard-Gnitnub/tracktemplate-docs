@@ -1,0 +1,6 @@
+interface:
+  display_name: "TrackTemplate docs context recovery"
+  short_description: "Recover task state and resume authorised work"
+  default_prompt: "Use $tracktemplate-docs-context-recovery to verify the current task state and resume authorised TrackTemplate documentation work."
+policy:
+  allow_implicit_invocation: true

@@ -30,7 +30,8 @@ their own licences, notices and authority. A link does not change those terms.
 
 The following material retains the upstream `GPL-3.0-or-later` licence:
 
-- Adapted skills under `.agents/skills/` and `docs/terminology.md`.
+- Adapted skills under `.agents/skills/`, `docs/terminology.md` and
+  `docs/agent-context.md`.
 - `docs/handbook/transition-edit.md`,
   `docs/handbook/generate-template-set.md`,
   `docs/handbook/curves-and-spacing.md` and
@@ -61,6 +62,7 @@ workbench phase registers and repository-specific receipt tooling.
 | `tracktemplate-docs-review` | `tracktemplate-documentation-review`, its writing checklist and ownership map, and `tracktemplate-technical-author-lead` |
 | `tracktemplate-docs-ste100` | TT-DOC-001 and the technical-documentation management plan in `reference/ENGINEERING_POLICY.md`; `reference/external/asd-ste100/README.md`; `reference/TERMINOLOGY.md`; the documentation-review checklist |
 | `tracktemplate-docs-align` | `tracktemplate-documentation-alignment` skill |
+| `tracktemplate-docs-context-compaction`, `tracktemplate-docs-context-recovery`, their shared packet template and `docs/agent-context.md` | `tracktemplate-context-recovery` skill and its `references/context-packet.md`; recovery terms in `reference/TERMINOLOGY.md`. The separate preparation skill, documentation review fields and lead/worker packet convention are handbook adaptations. |
 | Transition-edit chapter | `tracktemplate/ui/transition_parameter_editor.py`, `tracktemplate/application/transition_edit.py` and the linked state, adapter and validation sources |
 | Generation and replacement chapter | `TrackTemplate.FCMacro`, the retained B15 `CurveInputDialog` and `run_macro`, `tracktemplate/compatibility/transition_workflow.py`, `core_export_policy.py` and the linked persistence and evidence sources |
 | Curves and spacing chapter | `tracktemplate/domain/alignment.py`, retained B15 controls and geometry construction, the compatibility adapters and linked alignment contracts and fixtures |

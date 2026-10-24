@@ -23,11 +23,33 @@ repository keeps technical requirements, terminology, decisions and acceptance.
 | Consult STE100 during authoring or the one review | [tracktemplate-docs-ste100](.agents/skills/tracktemplate-docs-ste100/SKILL.md) |
 | Review a fixed candidate independently | [tracktemplate-docs-review](.agents/skills/tracktemplate-docs-review/SKILL.md) |
 | Check claims after source changes | [tracktemplate-docs-align](.agents/skills/tracktemplate-docs-align/SKILL.md) |
+| Prepare task state before a context change or at a substantial milestone | [tracktemplate-docs-context-compaction](.agents/skills/tracktemplate-docs-context-compaction/SKILL.md) |
+| Resume work after compaction, interruption or a handoff | [tracktemplate-docs-context-recovery](.agents/skills/tracktemplate-docs-context-recovery/SKILL.md) |
 
 Use the author skill automatically for new or materially changed handbook
 prose. Use the STE100 skill within authoring or review when its source checks
 apply. It does not create another review stage. A small factual or link
 correction needs the relevant check and diff review.
+
+## Context continuity
+
+For a long task, use the compaction skill to keep a concise context packet at
+substantial source, candidate, review, validation and publication milestones,
+before a known context transition, and when the user requests it. Use recovery
+after compaction or interruption before resuming consequential work. These
+skills prepare and verify task state; the host controls actual compaction.
+
+Preserve the current objective, user steering, established authority, dirty
+paths, source pins, finite review stage and next action. Verify live Git, PR and
+agent state when needed. A packet cannot create permission or preserve files.
+Keep temporary packets in conversation or ignored `.local/context/<task-id>/`.
+Do not publish them automatically or promise that they survive a new workspace.
+
+The lead owns `lead.md`; each worker owns only its assigned
+`workers/<worker-id>.md`, or returns a packet in its response if read-only.
+Supply workers with their scope, sources, permitted paths and relevant skills.
+Reconcile their findings before claiming an integrated result. See
+[Agent context and recovery](docs/agent-context.md) for invocation and limits.
 
 ## Source discipline
 

@@ -192,6 +192,8 @@ The repository supplies these adaptations under `.agents/skills/`:
 | `$tracktemplate-docs-ste100` | Consult the official standard within authoring or review and report the assessment boundary |
 | `$tracktemplate-docs-review` | Review the fixed candidate independently and provide one complete correction set |
 | `$tracktemplate-docs-align` | Find and correct documentation drift after a source or interface change |
+| `$tracktemplate-docs-context-compaction` | Prepare a concise context packet before a context change or at a substantial task milestone |
+| `$tracktemplate-docs-context-recovery` | Verify current task state and resume authorised work after compaction or interruption |
 
 The author skill includes a workflow template. Use the skills from the docs
 checkout; its root `AGENTS.md` gives their paths and routing. For example:
@@ -201,6 +203,12 @@ Use $tracktemplate-docs-author to explain the crossover Preview operation,
 from its visible inputs through the solver and complete-radius preflight.
 Use the source revision recorded in the GUI coverage map.
 ```
+
+For long tasks and delegated work, follow
+[Agent context and recovery](agent-context.md). Preserve the source pins,
+candidate, original review result, remaining corrections and validation state
+in the context packet. Recovery resumes the existing authoring cycle; it does
+not start a second stylistic review or grant publication authority.
 
 The adaptations draw on the upstream
 [Technical Author Lead](https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/.agents/skills/tracktemplate-technical-author-lead/SKILL.md),

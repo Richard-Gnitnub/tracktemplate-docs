@@ -28,6 +28,7 @@ owns current project status.
 | Follow the separate canonical transition editor | [A transition edit](handbook/transition-edit.md) |
 | Find a workflow to document | [GUI coverage](gui-coverage.md) |
 | Write a narrated technical explanation | [Authoring the handbook](authoring.md) |
+| Preserve and resume an agent's documentation task | [Agent context and recovery](agent-context.md) |
 | Use the project's railway and software terms | [Using TrackTemplate terminology](terminology.md) |
 | Prepare a contribution | [Contributing](contributing.md) |
 | Choose the right validation | [Testing and validation](testing.md) |
@@ -51,6 +52,7 @@ handbook/straight-routes
 handbook/transition-edit
 gui-coverage
 authoring
+agent-context
 terminology
 contributing
 testing
