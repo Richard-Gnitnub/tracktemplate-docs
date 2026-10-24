@@ -594,8 +594,8 @@ partition loop. [Shared masks][section-masks]; [section preparation][section-pre
 
 This connects the platform definition to the board and its physical parts.
 The [formation-board chapter](formation-board.md) follows the board-margin,
-width and footprint calculation. The section-partition explanation remains
-tracked in [issue #15][section-issue].
+width and footprint calculation. The [sectioning chapter](sectioning.md)
+explains shared cuts, partial platform coverage and the partition checks.
 This chapter establishes the platform geometry that those operations consume.
 
 ## Evidence and reproduction limits
@@ -673,7 +673,6 @@ native shapes and noted import risk were not executed for this chapter.
 [formation-sweep]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L10365-L10415
 [section-masks]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L41318-L41350
 [section-preparation]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L41405-L41439
-[section-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/15
 [station-evidence]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/benchmarks/2026-09-12-phase7-station-mapping-regression.md
 [coverage-evidence]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/benchmarks/2026-09-26-phase7-platform-heading-coverage-regression.md
 [input-evidence]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/benchmarks/2026-09-26-phase7-platform-input-validation-regression.md

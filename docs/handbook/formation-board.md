@@ -500,12 +500,12 @@ document-stage exception attempts to abort that transaction; export follows
 the document commit and has its own result. Export failure does not imply
 that the generated board was rolled back. [Transaction and export ordering][transaction]
 
-Shared sectioning can partition the face and body, while registration,
-numbering and matching holes consume or modify the prepared geometry. Those
-algorithms remain separate work in [issue #15][section-issue] and
-[issue #16][assembly-issue]. This chapter explains their formation inputs,
-including the protection collection, without treating every later result as
-the unmodified base sweep.
+The [sectioning chapter](sectioning.md) follows shared cuts through the
+formation face, partition checks, section solids and numbering. Registration
+and matching holes consume or modify the prepared geometry; their full
+explanation remains [issue #16][assembly-issue]. This chapter explains those
+formation inputs, including the protection collection, without treating every
+later result as the unmodified base sweep.
 
 Generated objects carry export metadata, but the normal B16 Core export route
 currently rejects a configuration with formation enabled. Its dependency
@@ -580,7 +580,6 @@ source and representation.
 [load-state]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L40801-L40849
 [settings]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L21731-L21961
 [transaction]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L42666-L42715
-[section-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/15
 [assembly-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/16
 [export-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/33
 [export-scope]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/compatibility/core_dependency_inventory.py#L164-L170

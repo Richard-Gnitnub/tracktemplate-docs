@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="777.6pt" height="518.4pt" viewBox="0 0 777.6 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Balanced and unbalanced section lengths</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Balanced and unbalanced section lengths</dc:title>
+    <dc:description>Independent nominal illustration. Source 7965bfc4671668f889c1f43fb8336c5146c3f5cf. No workbench or FreeCAD execution; not native partition or physical-fit proof.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>TrackTemplate developer handbook</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title>SPDX-License-Identifier: GPL-3.0-or-later. Copyright (C) 2026 Richard-Gnitnub and TrackTemplateMacro contributors.</dc:title>
+     </cc:Agent>
+    </dc:rights>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4
+L 777.6 518.4
+L 777.6 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 72.868645 161.568
+L 286.081548 161.568
+L 286.081548 120.096
+L 72.868645 120.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #dce8f2; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 286.081548 161.568
+L 499.294452 161.568
+L 499.294452 120.096
+L 286.081548 120.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #e9eff5; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 499.294452 161.568
+L 712.507355 161.568
+L 712.507355 120.096
+L 499.294452 120.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #dce8f2; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 72.868645 269.568
+L 339.384774 269.568
+L 339.384774 228.096
+L 72.868645 228.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #dce8f2; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 339.384774 269.568
+L 605.900903 269.568
+L 605.900903 228.096
+L 339.384774 228.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #e9eff5; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 605.900903 269.568
+L 712.507355 269.568
+L 712.507355 228.096
+L 605.900903 228.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #f4dfe6; stroke: #8b3153; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 72.868645 377.568
+L 339.384774 377.568
+L 339.384774 336.096
+L 72.868645 336.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #dce8f2; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 339.384774 377.568
+L 525.946065 377.568
+L 525.946065 336.096
+L 339.384774 336.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #e9eff5; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 525.946065 377.568
+L 712.507355 377.568
+L 712.507355 336.096
+L 525.946065 336.096
+z
+" clip-path="url(#p75bd4cda3b)" style="fill: #dce8f2; stroke: #245b86; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="72.868645" y="99.456375" transform="rotate(-0 72.868645 99.456375)">A  Balanced</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="179.475097" y="144.281219" transform="rotate(-0 179.475097 144.281219)">400 mm</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="392.688" y="144.281219" transform="rotate(-0 392.688 144.281219)">400 mm</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="605.900903" y="144.281219" transform="rotate(-0 605.900903 144.281219)">400 mm</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="72.868645" y="180.778359" transform="rotate(-0 72.868645 180.778359)">0</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="286.081548" y="180.778359" transform="rotate(-0 286.081548 180.778359)">400</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="499.294452" y="180.778359" transform="rotate(-0 499.294452 180.778359)">800</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="712.507355" y="180.778359" transform="rotate(-0 712.507355 180.778359)">1200</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="72.868645" y="207.456375" transform="rotate(-0 72.868645 207.456375)">B  Unbalanced: initial cuts</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="206.12671" y="252.281219" transform="rotate(-0 206.12671 252.281219)">500 mm</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="472.642839" y="252.281219" transform="rotate(-0 472.642839 252.281219)">500 mm</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #8b3153" x="659.204129" y="252.281219" transform="rotate(-0 659.204129 252.281219)">200 mm</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="72.868645" y="288.778359" transform="rotate(-0 72.868645 288.778359)">0</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="339.384774" y="288.778359" transform="rotate(-0 339.384774 288.778359)">500</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="605.900903" y="288.778359" transform="rotate(-0 605.900903 288.778359)">1000</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="712.507355" y="288.778359" transform="rotate(-0 712.507355 288.778359)">1200</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="72.868645" y="315.456375" transform="rotate(-0 72.868645 315.456375)">C  Unbalanced: after the last two sections are redistributed</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="206.12671" y="360.281219" transform="rotate(-0 206.12671 360.281219)">500 mm</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="432.665419" y="360.281219" transform="rotate(-0 432.665419 360.281219)">350 mm</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #245b86" x="619.22671" y="360.281219" transform="rotate(-0 619.22671 360.281219)">350 mm</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="72.868645" y="396.778359" transform="rotate(-0 72.868645 396.778359)">0</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="339.384774" y="396.778359" transform="rotate(-0 339.384774 396.778359)">500</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="525.946065" y="396.778359" transform="rotate(-0 525.946065 396.778359)">850</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263747" x="712.507355" y="396.778359" transform="rotate(-0 712.507355 396.778359)">1200</text>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="62.208" y="30.3015" transform="rotate(-0 62.208 30.3015)">One straight reference, two section plans</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="62.208" y="55.394203" transform="rotate(-0 62.208 55.394203)">Reference 1,200 mm  ·  Maximum 500 mm  ·  Minimum 250 mm</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="62.208" y="469.152" transform="rotate(-0 62.208 469.152)">The 200 mm remainder is below 250 mm: (500 + 200) ÷ 2 = 350 mm.</text>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263747" x="62.208" y="493.5168" transform="rotate(-0 62.208 493.5168)">Independent arithmetic. Boundary values are reference stations in mm.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p75bd4cda3b">
+   <rect x="62.208" y="88.128" width="660.96" height="336.96"/>
+  </clipPath>
+ </defs>
+</svg>

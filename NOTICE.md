@@ -36,8 +36,9 @@ The following material retains the upstream `GPL-3.0-or-later` licence:
   `docs/handbook/generate-template-set.md`,
   `docs/handbook/curves-and-spacing.md`,
   `docs/handbook/straight-routes.md`,
-  `docs/handbook/platforms.md` and
-  `docs/handbook/formation-board.md`.
+  `docs/handbook/platforms.md`,
+  `docs/handbook/formation-board.md` and
+  `docs/handbook/sectioning.md`.
 - `tools/render_alignment_figures.py` and its committed outputs:
   `docs/_static/figures/euler-two-track-example.svg`,
   `docs/_static/figures/euler-curvature-example.svg` and
@@ -53,6 +54,10 @@ The following material retains the upstream `GPL-3.0-or-later` licence:
   `docs/_static/figures/formation-cross-section-example.svg`,
   `docs/_static/figures/formation-width-example.svg` and
   `docs/_static/figures/formation-example-values.json`.
+- `tools/render_section_figures.py` and its committed outputs:
+  `docs/_static/figures/section-lengths-example.svg`,
+  `docs/_static/figures/section-shared-boundaries-example.svg` and
+  `docs/_static/figures/section-example-values.json`.
 
 The complete GPL version 3 text is preserved in
 [.agents/LICENSE](.agents/LICENSE). The original scaffold's MIT notice remains
@@ -79,10 +84,12 @@ workbench phase registers and repository-specific receipt tooling.
 | Straight-route chapter | `build_straight_route` and `validate_connected_straight_routes` in `tracktemplate/domain/alignment.py`, the retained B15 Straight Track Manager and production path, the B16 compatibility adapter and linked contracts and evidence |
 | Physical-platform chapter | Retained B15 platform manager, boundary projection, plan taper, native shapes and production path; selected station, coverage, input, length and height helpers in `tracktemplate/domain/alignment.py`; B16 bindings and linked contracts and evidence |
 | Formation-board chapter | Retained B15 formation controls, ordered edge projection, swept footprint, broadening, width, connected end caps, native outputs, engraving and saved state; B16 station-helper bindings and linked evidence limits |
+| Universal-sectioning chapter | Retained B15 section controls, length plan, perpendicular halfspace masks, native clipping, partition checks, per-route outputs, numbering and preservation; B16 station-helper bindings and bounded retained GUI evidence |
 | Curve figure tool and generated assets | Euler equations in `tracktemplate/domain/alignment.py` and numerical expectations in `tests/validate_phase1_alignment.py` at the pinned revision; independent documentation calculations and plotting |
 | Straight figure tool and generated assets | Independent-route tangent and normal equations in `tracktemplate/domain/alignment.py` at the pinned revision; independent documentation calculations and plotting |
 | Platform figure tool and generated assets | Physical-platform offset and taper equations in retained B15 and top-height equations in `tracktemplate/domain/alignment.py` at the pinned revision; retained curve-example values and independent documentation calculations and plotting |
 | Formation figure tool and generated assets | Retained B15 formation margin, broadening, minimum-width and extrusion equations at the pinned revision; nominal concentric cross-sections and a continuous broadening illustration calculated independently for the handbook |
+| Section figure tool and generated assets | Retained B15 section-planning rules and shared-boundary construction at the pinned revision; independent length arithmetic and a new nominal circular track/platform/formation illustration |
 | Terminology-use guide | `reference/TERMINOLOGY.md` and `reference/contracts/phase1-terminology-assurance.json` |
 
 All upstream skill paths are under `.agents/skills/` at the named revision.
@@ -93,7 +100,8 @@ provenance and their recorded limits.
 
 The explanatory figures show smooth mathematical curve centrelines, curvature,
 straight centreline arithmetic, illustrative platform plan and end profiles,
-and nominal formation cross-sections and width profiles.
+nominal formation cross-sections and width profiles, and section-length and
+shared-boundary illustrations.
 They do not reproduce the retained host's sampled geometry or constitute a
 FreeCAD, GUI or workbench validation result. Their source revision and numerical
 scope are recorded in the generator and the accompanying JSON. Matplotlib is

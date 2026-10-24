@@ -358,10 +358,12 @@ These are generation settings and derived objects; the separate canonical
 [transition editor](transition-edit.md) has its own state ownership.
 [Groups][groups]; [route metadata][metadata]; [stored settings][settings]
 
-Optional formation, sectioning and assembly calculations use the prepared
-straight routes but need their own explanations. The
+Optional production calculations use the prepared straight routes. The
+[formation-board chapter](formation-board.md) explains board preparation;
+the [sectioning chapter](sectioning.md#straight-routes-prepare-their-own-plans)
+explains each route's local plan and numbering. Assembly remains in the
 [coverage map](../gui-coverage.md#alignments-and-generated-template-sets)
-tracks those chapters. The shared generation chapter covers
+as separate work. The shared generation chapter covers
 [replacement ownership](generate-template-set.md#set-identity-and-replacement-ownership)
 and [commit and visible results](generate-template-set.md#commit-stored-properties-and-visible-results).
 
