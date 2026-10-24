@@ -1,29 +1,36 @@
-#
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""Documentation configuration. This build does not import TrackTemplate."""
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+project = "TrackTemplate"
+author = "TrackTemplate contributors"
+copyright = "2026, TrackTemplate contributors"
+release = "development"
 
-project = 'Templot5 Companion'
-copyright = '2024, Richard Bunting, working on behalf of Martin Wynne'
-author = 'Richard Bunting, working on behalf of Martin Wynne'
-release = '0.1'
+extensions = ["myst_parser"]
+source_suffix = {".md": "markdown", ".rst": "restructuredtext"}
+root_doc = "index"
+language = "en"
+exclude_patterns = ["Thumbs.db", ".DS_Store"]
+smartquotes = False
+nitpicky = True
+myst_heading_anchors = 3
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+html_theme = "pydata_sphinx_theme"
+html_title = "TrackTemplate developer documentation"
+html_static_path = ["_static"]
+html_css_files = ["custom.css"]
+html_show_sourcelink = True
 
-extensions = []
-
-templates_path = ['_templates']
-exclude_patterns = []
-
-
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_theme_options = {
+    "logo": {"text": "TrackTemplate"},
+    "show_prev_next": True,
+    "show_nav_level": 2,
+    "navigation_depth": 2,
+    "header_links_before_dropdown": 6,
+    "icon_links": [
+        {
+            "name": "TrackTemplate source",
+            "url": "https://github.com/Richard-Gnitnub/tracktemplate",
+            "icon": "fa-brands fa-github",
+        }
+    ],
+}

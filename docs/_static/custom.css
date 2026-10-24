@@ -1,1 +1,25 @@
-/* This file intentionally left blank. */
+/* Small theme adjustments; the theme retains responsive navigation. */
+html[data-theme="light"] {
+  --pst-color-primary: #244d70;
+  --pst-color-link: #244d70;
+  --pst-color-link-hover: #16354f;
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: #9fc6e7;
+  --pst-color-link: #9fc6e7;
+  --pst-color-link-hover: #d3e8f9;
+}
+
+.bd-article-container {
+  max-width: 52rem;
+}
+
+.bd-article h1 {
+  letter-spacing: -0.025em;
+}
+
+.bd-article p,
+.bd-article li {
+  line-height: 1.65;
+}
