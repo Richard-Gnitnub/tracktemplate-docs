@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 338" role="img" aria-labelledby="title desc">
+  <title id="title">Facing and trailing C10 occupied host-chainage intervals</title>
+  <desc id="desc">A 1542.476 millimetre host centreline runs from left to right. With a switch toe at 746.298 millimetres, the facing module occupies stations 724.631 to 1107.698; the trailing module occupies 384.898 to 767.965. Each module is 383.066 millimetres long, including the switch-front extension before the toe.</desc>
+  <rect width="960" height="338" fill="#ffffff"/>
+  <text x="40" y="34" font-family="system-ui, sans-serif" font-size="21" font-weight="700" fill="#122433">One host, one toe station, two occupied intervals</text>
+  <text x="40" y="58" font-family="system-ui, sans-serif" font-size="14" fill="#405363">Station scale follows host travel direction →   •   Orange line: switch toe at 746.298 mm</text>
+
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#405363">
+    <line x1="70" y1="99" x2="890" y2="99" stroke="#526776" stroke-width="2"/>
+    <path d="M 882 94 L 890 99 L 882 104" fill="none" stroke="#526776" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="70" y1="91" x2="70" y2="107" stroke="#526776" stroke-width="2"/>
+    <line x1="282.66" y1="93" x2="282.66" y2="105" stroke="#526776"/>
+    <line x1="466.71" y1="91" x2="466.71" y2="107" stroke="#c45530" stroke-width="2"/>
+    <line x1="654.83" y1="93" x2="654.83" y2="105" stroke="#526776"/>
+    <line x1="890" y1="91" x2="890" y2="107" stroke="#526776" stroke-width="2"/>
+    <text x="70" y="86" text-anchor="middle">0</text>
+    <text x="282.66" y="86" text-anchor="middle">400</text>
+    <text x="466.71" y="86" text-anchor="middle" fill="#a33a20" font-weight="700">746.298</text>
+    <text x="654.83" y="86" text-anchor="middle">1100</text>
+    <text x="890" y="86" text-anchor="end">1542.476 mm</text>
+  </g>
+
+  <rect x="40" y="118" width="880" height="94" rx="12" fill="#f0f8fb"/>
+  <text x="58" y="142" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#0c5370">Facing in host travel direction →</text>
+  <line x1="70" y1="170" x2="890" y2="170" stroke="#bccbd3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="455.03" y="155" width="203.64" height="30" rx="8" fill="#0b779e"/>
+  <line x1="466.71" y1="149" x2="466.71" y2="191" stroke="#c45530" stroke-width="4" stroke-linecap="round"/>
+  <text x="58" y="201" font-family="system-ui, sans-serif" font-size="14" fill="#194659">Complete module: 724.631–1107.698 mm  ·  21.667 mm precedes the toe</text>
+
+  <rect x="40" y="225" width="880" height="95" rx="12" fill="#f6f1fa"/>
+  <text x="58" y="248" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#5b3b88">Trailing against host travel direction ←</text>
+  <line x1="70" y1="278" x2="890" y2="278" stroke="#c7c0ce" stroke-width="8" stroke-linecap="round"/>
+  <rect x="274.55" y="263" width="203.64" height="30" rx="8" fill="#7650a5"/>
+  <line x1="466.71" y1="257" x2="466.71" y2="299" stroke="#c45530" stroke-width="4" stroke-linecap="round"/>
+  <text x="58" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#49375e">Complete module: 384.898–767.965 mm  ·  21.667 mm follows the toe</text>
+</svg>
