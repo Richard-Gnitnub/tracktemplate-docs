@@ -453,7 +453,8 @@ The order of operations limits what the partition check covers:
 Those are intentional later operations. The initial strip or formation
 partition check does not certify every final jointed or drilled result.
 [Curve operation order][layer-calls]; [straight operation order][straight-layers]
-The full assembly explanation remains [issue #16][assembly-issue].
+The [assembly and fixing chapter](assembly-and-fixing.md) follows the separate
+board and strip placement rules through the final geometry.
 
 ## Preserve objects and give each route its own sequence
 
@@ -660,5 +661,4 @@ and output-use claims within those stated limits.
 [export-scope]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/compatibility/core_dependency_inventory.py#L164-L170
 [gui-evidence]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/benchmarks/2026-09-12-phase7-station-mapping-regression.md#L96-L139
 [fixture-evidence]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/benchmarks/2026-09-12-phase7-station-mapping-regression.md#L256-L264
-[assembly-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/16
 [export-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/33
