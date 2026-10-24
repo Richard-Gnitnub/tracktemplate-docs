@@ -1,0 +1,163 @@
+{
+  "licence": "GPL-3.0-or-later",
+  "copyright": "Copyright (C) 2026 Richard-Gnitnub and TrackTemplateMacro contributors.",
+  "description": "Independent handbook arithmetic; not a workbench or GUI test result.",
+  "source_revision": "7965bfc4671668f889c1f43fb8336c5146c3f5cf",
+  "equation_sources": [
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tests/validate_phase1_alignment.py#L92-L119",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/domain/alignment.py#L1866-L1972",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/domain/alignment.py#L1992-L2137",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L9029-L9098",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L9220-L9454"
+  ],
+  "inputs": {
+    "arrangement": "Outside one track",
+    "track_a": "Matched Outside track",
+    "track_a_radius_mm": 655.0,
+    "main_radius_mm": 600.0,
+    "retained_track_a_euler_length_each_mm": 559.4102547270278,
+    "total_turn_degrees": 90.0,
+    "outside_side": "Right of travel",
+    "coverage": "Constant curve only",
+    "platform_length_mm": 150.0,
+    "centre_offset_mm": 0.0,
+    "clearance_a_mm": 20.0,
+    "platform_width_mm": 30.0,
+    "body_output": "3D platform solid",
+    "platform_height_mm": 12.0,
+    "entry_end_style": "Tapered",
+    "exit_end_style": "Tapered",
+    "entry_end_length_mm": 30.0,
+    "exit_end_length_mm": 30.0,
+    "required_clearance_mm": 20.0,
+    "check_clearance": true,
+    "strip_width_mm": 32.0,
+    "create_template": true
+  },
+  "constants": {
+    "plan_nose_limit_mm": 0.1,
+    "trackbed_top_z_mm": 1.0
+  },
+  "station_and_frame": {
+    "profiles": "Station along Track A from the platform start, in travel direction.",
+    "plan_origin": "Track A midpoint on the ideal constant-radius circle.",
+    "plan_x": "Tangent in the travel direction at the midpoint, in mm.",
+    "plan_y": "Right normal at the midpoint, in mm.",
+    "plan_equation": "delta=(s-75)/655; x=r*sin(delta); y=r*cos(delta)-655",
+    "plan_parameter_limit": "The plan substitutes relative station s for ideal arc distance. The workbench uses sampled chord distance and interpolated points."
+  },
+  "nominal_smooth_circle": {
+    "entry_angle_rad": 0.42703072879925785,
+    "constant_angle_rad": 0.7167348691963809,
+    "constant_coverage_length_mm": 469.46133932362943,
+    "centred_platform_inset_each_mm": 159.73066966181472,
+    "limit": "Ideal arc arithmetic only; these are not host station results."
+  },
+  "profile_table": [
+    {
+      "relative_track_a_station_mm": 0.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 0.1,
+      "far_edge_offset_mm": 20.1,
+      "solid_top_z_mm": 1.0
+    },
+    {
+      "relative_track_a_station_mm": 3.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 3.0,
+      "far_edge_offset_mm": 23.0,
+      "solid_top_z_mm": 2.1
+    },
+    {
+      "relative_track_a_station_mm": 15.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 15.0,
+      "far_edge_offset_mm": 35.0,
+      "solid_top_z_mm": 6.5
+    },
+    {
+      "relative_track_a_station_mm": 30.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 30.0,
+      "far_edge_offset_mm": 50.0,
+      "solid_top_z_mm": 12.0
+    },
+    {
+      "relative_track_a_station_mm": 75.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 30.0,
+      "far_edge_offset_mm": 50.0,
+      "solid_top_z_mm": 12.0
+    },
+    {
+      "relative_track_a_station_mm": 120.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 30.0,
+      "far_edge_offset_mm": 50.0,
+      "solid_top_z_mm": 12.0
+    },
+    {
+      "relative_track_a_station_mm": 135.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 15.0,
+      "far_edge_offset_mm": 35.0,
+      "solid_top_z_mm": 6.5
+    },
+    {
+      "relative_track_a_station_mm": 147.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 3.0,
+      "far_edge_offset_mm": 23.0,
+      "solid_top_z_mm": 2.1
+    },
+    {
+      "relative_track_a_station_mm": 150.0,
+      "near_edge_offset_mm": 20.0,
+      "plan_width_mm": 0.1,
+      "far_edge_offset_mm": 20.1,
+      "solid_top_z_mm": 1.0
+    }
+  ],
+  "nominal_between_track_comparison": [
+    {
+      "clearance_a_mm": 20.0,
+      "clearance_b_mm": 20.0,
+      "nominal_centreline_gap_mm": 55.0,
+      "nominal_full_width_mm": 15.0,
+      "ideal_width_sign": "positive"
+    },
+    {
+      "clearance_a_mm": 26.0,
+      "clearance_b_mm": 26.0,
+      "nominal_centreline_gap_mm": 55.0,
+      "nominal_full_width_mm": 3.0,
+      "ideal_width_sign": "positive"
+    },
+    {
+      "clearance_a_mm": 27.0,
+      "clearance_b_mm": 27.0,
+      "nominal_centreline_gap_mm": 55.0,
+      "nominal_full_width_mm": 1.0,
+      "ideal_width_sign": "positive"
+    },
+    {
+      "clearance_a_mm": 28.0,
+      "clearance_b_mm": 28.0,
+      "nominal_centreline_gap_mm": 55.0,
+      "nominal_full_width_mm": -1.0,
+      "ideal_width_sign": "non-positive"
+    }
+  ],
+  "between_track_limit": "55-clearance_a-clearance_b describes the ideal concentric circles. The host projects Track B's offset edge onto Track A's normal and checks the computed cross-section width; it does not pair equal stations. This comparison does not establish native-shape validity or practical width.",
+  "nose_limit_note": "A positive cross-section narrower than 0.10 mm is left at that width; the taper does not enlarge it to 0.10 mm.",
+  "evidence_limits": [
+    "The physical-platform dimensions are teaching inputs, not a retained runtime receipt.",
+    "No workbench module, project test, validator, macro or FreeCAD process ran.",
+    "The plan is a smooth-circle illustration, not sampled or native workbench geometry.",
+    "The profile table applies the independent equations to relative Track A stations.",
+    "No absolute host station, native solid, GUI or export result is claimed.",
+    "Top z values describe the solid calculation, not the separately lifted edge wires.",
+    "These values establish no railway-standard clearance, physical fit or output acceptance."
+  ],
+  "illustration_check_absolute_tolerance_mm": 1e-10
+}

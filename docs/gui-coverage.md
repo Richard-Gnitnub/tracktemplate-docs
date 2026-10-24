@@ -11,8 +11,8 @@ Labels, callbacks and composition were inspected in source; the GUI was not
 executed for this inventory. **Not yet written** means that the intended
 explanation has no handbook chapter. It does not mean the operation is absent
 from the code. The linked chapters cover main generation, curve and spacing
-calculations, straight routes, and the separate transition editor within their
-stated limits.
+calculations, straight routes, physical platforms, and the separate transition
+editor within their stated limits.
 
 ## Read the current interface correctly
 
@@ -36,14 +36,16 @@ geometry action to **Build 3D chairs for export**. The
 | Generate or replace a set: **Output behaviour:** | `CurveInputDialog.values` and host `run_macro`: remembered inputs, preparation, generated identities, replacement, transaction, recompute, visible results and failure limits. [Source][generation] | [Detailed generation walkthrough](handbook/generate-template-set.md). Optional feature calculations and export publication remain separate. |
 | **Main curve** and **Independent parallel-track controls** | Track add/remove/duplicate handlers, then `main_circle_centre`, `build_concentric_core` and `prepare_track_alignment`: Euler easing, circular arcs, signed turn, spacing modes, handedness, strip and centreline output. [UI][main-ui]; [calculations][alignment] | [Detailed calculation walkthrough](handbook/curves-and-spacing.md): the three modes, controls, frame, sampling and generated geometry. |
 | **Straight Track Manager** | `_add_straight`, `_add_curve_connection_pair`, `build_straight_route` and connected-route validation: independent datums, parallel tracks, tangent inheritance and disabled fields. The entrance/exit-pair action replaces all straight rows with two 600 mm routes. [Source][straights] | [Detailed straight-route walkthrough](handbook/straight-routes.md): controls, Forward/Reverse arithmetic, connected endpoints, identities, geometry and validation. Optional production features remain separate; current Core export excludes enabled straight routes. |
-| **Platforms** | Platform add/duplicate/remove/reorder handlers and `calculate_platform_boundaries`: host references, edge clearance, coverage, length, taper/ramp and edge/face/solid outputs. Separate physical platforms from track **Platform widening**. [Source][platforms] | Not yet written |
+| **Platforms** | Platform add/duplicate/remove/reorder handlers and `calculate_platform_boundaries`: host references, edge clearance, coverage, length, taper/ramp and edge/face/solid outputs. Separate physical platforms from track **Platform widening**. [Source][platforms] | [Detailed platform walkthrough](handbook/platforms.md): Track A stationing, independent-host projection, worked end profiles, manager identity, native shapes and current state limitations. Formation-board and sectioning algorithms remain separate. |
 | **Formation board** | `create_formation_geometry_multi`: occupied footprints, margin, width, outline/solid and engraving; explain how the board relates to tracks and platforms. [Controls][formation-ui]; [calculation][formation] | Not yet written |
 | **Universal sectioning** | `calculate_section_plan`, `create_section_masks` and `validate_section_partition`: shared boundaries, balanced lengths, travel order, retained unsplit objects and rejected partitions. [Controls][section-ui]; [calculations][sectioning] | Not yet written |
 | **Formation-board registration features** and **Track-template assembly and fixing** | `apply_registration_features`, `apply_track_template_joints` and `create_track_template_fixing_holes`: distinguish board joints from strip joints, fit clearance, fixing holes and matching board holes. Explain their sectioning prerequisites. [Source][assembly] | Not yet written |
 
 The platform track selectors currently list the main curve and its added-track
-rows. They do not offer Straight Track Manager routes. A platform chapter must
-preserve that boundary. [Track-choice implementation][platform-hosts]
+rows. They do not offer Straight Track Manager routes. The
+[platform chapter](handbook/platforms.md#host-names-are-choices-backed-by-list-positions)
+explains that boundary and the positional host references.
+[Track-choice implementation][platform-hosts]
 
 ## Editing, turnouts, crossovers and chairs
 
