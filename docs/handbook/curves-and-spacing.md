@@ -282,6 +282,8 @@ concentric curve, for example beside an island platform, while keeping both
 straight spacings and transition lengths as inputs. It uses a continuous
 compound-curvature profile in the selected turn direction. This alignment
 mode does not itself create a platform body. [UI design explanation][controls]
+The [physical-platform chapter](platforms.md) follows the separate manager
+that uses these alignments to place edges and create faces or solids.
 
 For normalised station `u`, radius `R` and solved shape parameter `a`, the
 entry and exit curvatures are:

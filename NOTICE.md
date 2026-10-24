@@ -34,8 +34,9 @@ The following material retains the upstream `GPL-3.0-or-later` licence:
   `docs/agent-context.md`.
 - `docs/handbook/transition-edit.md`,
   `docs/handbook/generate-template-set.md`,
-  `docs/handbook/curves-and-spacing.md` and
-  `docs/handbook/straight-routes.md`.
+  `docs/handbook/curves-and-spacing.md`,
+  `docs/handbook/straight-routes.md` and
+  `docs/handbook/platforms.md`.
 - `tools/render_alignment_figures.py` and its committed outputs:
   `docs/_static/figures/euler-two-track-example.svg`,
   `docs/_static/figures/euler-curvature-example.svg` and
@@ -43,6 +44,10 @@ The following material retains the upstream `GPL-3.0-or-later` licence:
 - `tools/render_straight_route_figure.py` and its committed outputs:
   `docs/_static/figures/straight-route-direction.svg` and
   `docs/_static/figures/straight-route-example-values.json`.
+- `tools/render_platform_figures.py` and its committed outputs:
+  `docs/_static/figures/platform-plan-example.svg`,
+  `docs/_static/figures/platform-profiles-example.svg` and
+  `docs/_static/figures/platform-example-values.json`.
 
 The complete GPL version 3 text is preserved in
 [.agents/LICENSE](.agents/LICENSE). The original scaffold's MIT notice remains
@@ -67,8 +72,10 @@ workbench phase registers and repository-specific receipt tooling.
 | Generation and replacement chapter | `TrackTemplate.FCMacro`, the retained B15 `CurveInputDialog` and `run_macro`, `tracktemplate/compatibility/transition_workflow.py`, `core_export_policy.py` and the linked persistence and evidence sources |
 | Curves and spacing chapter | `tracktemplate/domain/alignment.py`, retained B15 controls and geometry construction, the compatibility adapters and linked alignment contracts and fixtures |
 | Straight-route chapter | `build_straight_route` and `validate_connected_straight_routes` in `tracktemplate/domain/alignment.py`, the retained B15 Straight Track Manager and production path, the B16 compatibility adapter and linked contracts and evidence |
+| Physical-platform chapter | Retained B15 platform manager, boundary projection, plan taper, native shapes and production path; selected station, coverage, input, length and height helpers in `tracktemplate/domain/alignment.py`; B16 bindings and linked contracts and evidence |
 | Curve figure tool and generated assets | Euler equations in `tracktemplate/domain/alignment.py` and numerical expectations in `tests/validate_phase1_alignment.py` at the pinned revision; independent documentation calculations and plotting |
 | Straight figure tool and generated assets | Independent-route tangent and normal equations in `tracktemplate/domain/alignment.py` at the pinned revision; independent documentation calculations and plotting |
+| Platform figure tool and generated assets | Physical-platform offset and taper equations in retained B15 and top-height equations in `tracktemplate/domain/alignment.py` at the pinned revision; retained curve-example values and independent documentation calculations and plotting |
 | Terminology-use guide | `reference/TERMINOLOGY.md` and `reference/contracts/phase1-terminology-assurance.json` |
 
 All upstream skill paths are under `.agents/skills/` at the named revision.
@@ -77,8 +84,8 @@ records the project copyright, GPL-3.0-or-later terms and Templot source basis.
 Source-linked railway calculations and validation evidence retain that
 provenance and their recorded limits.
 
-The explanatory figures show smooth mathematical curve centrelines, curvature
-and straight centreline arithmetic.
+The explanatory figures show smooth mathematical curve centrelines, curvature,
+straight centreline arithmetic, and illustrative platform plan and end profiles.
 They do not reproduce the retained host's sampled geometry or constitute a
 FreeCAD, GUI or workbench validation result. Their source revision and numerical
 scope are recorded in the generator and the accompanying JSON. Matplotlib is
