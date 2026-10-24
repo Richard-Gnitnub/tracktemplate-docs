@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 505" role="img" aria-labelledby="title description">
+<title id="title">Crossover minimum-radius preflight: two source witnesses</title>
+<desc id="description">Three bar measurements compare mapped Host A turnout, mapped Host B turnout and connecting road radius in two crossover positions. The 600 millimetre minimum is a vertical dashed line. The 500 millimetre Host A toe is rejected because Host B turnout road is 540.848 millimetres. The 746.298 millimetre position is accepted with complete minimum 676.179 millimetres.</desc>
+<rect width="960" height="505" fill="#ffffff"/>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;fill:#16324b}.title{font-weight:700;font-size:22px}.p{font-size:15px}.panel{font-size:17px;font-weight:700}.small{font-size:13px}.data{font-size:13px;font-weight:700}.guide{stroke:#ae4b38;stroke-width:2;stroke-dasharray:7 6}</style>
+<text class="title" x="28" y="35">The connector alone does not decide feasibility</text>
+<text class="p" x="28" y="60">Requested minimum: 600 mm. All radii are sampled and measured in model millimetres.</text>
+<rect x="20" y="82" width="920" height="182" rx="12" fill="#fbf5f1" stroke="#d6e0e5"/>
+<text class="panel" x="40" y="111">500.000 mm  •  rejected</text>
+<text class="small" x="40" y="132">Complete minimum 540.848 mm &lt; 600 mm</text>
+<line class="guide" x1="562" x2="562" y1="139" y2="253"/>
+<text class="p" x="42" y="177">Host A turnout</text>
+<rect x="268" y="162" width="297.22652392435083" height="19" rx="4" fill="#237c81"/>
+<text class="data" x="574.2265239243509" y="177">606.585</text>
+<text class="p" x="42" y="207">Host B turnout</text>
+<rect x="268" y="192" width="265.01570352511936" height="19" rx="4" fill="#ba4c34"/>
+<text class="data" x="542.0157035251193" y="207">540.848</text>
+<text class="p" x="42" y="237">Connecting road</text>
+<rect x="268" y="222" width="304.33083487492223" height="19" rx="4" fill="#237c81"/>
+<text class="data" x="581.3308348749222" y="237">621.083</text>
+<rect x="20" y="274" width="920" height="182" rx="12" fill="#f0f8f6" stroke="#d6e0e5"/>
+<text class="panel" x="40" y="303">746.298 mm  •  accepted</text>
+<text class="small" x="40" y="324">Complete minimum 676.179 mm ≥ 600 mm</text>
+<line class="guide" x1="562" x2="562" y1="331" y2="445"/>
+<text class="p" x="42" y="369">Host A turnout</text>
+<rect x="268" y="354" width="341.4848809953021" height="19" rx="4" fill="#237c81"/>
+<text class="data" x="618.4848809953021" y="369">696.908</text>
+<text class="p" x="42" y="399">Host B turnout</text>
+<rect x="268" y="384" width="434.727701439176" height="19" rx="4" fill="#237c81"/>
+<text class="data" x="711.7277014391759" y="399">887.199</text>
+<text class="p" x="42" y="429">Connecting road</text>
+<rect x="268" y="414" width="331.3275479026568" height="19" rx="4" fill="#237c81"/>
+<text class="data" x="608.3275479026568" y="429">676.179</text>
+<line class="guide" x1="562" x2="562" y1="465" y2="488"/>
+<text class="small" x="574" y="483">600 mm limit</text>
+<text class="small" x="28" y="483">Source: frozen curved-host crossover feasibility witnesses</text>
+</svg>

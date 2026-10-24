@@ -11,7 +11,9 @@ explain its individual features. [Transition editing](transition-edit.md)
 covers a separately activated editor for Euler (clothoid) transitions.
 [C10 turnout placement and editing](turnout-placement-and-editing.md) follows
 the switch-toe position through the host alignment, source geometry and
-transactional changes to a managed turnout.
+transactional changes to a managed turnout. [Crossover geometry and
+preflight](crossover-geometry.md) then connects two mapped C10s and checks
+the complete resulting radius before native construction.
 
 ```{toctree}
 :maxdepth: 1
@@ -25,6 +27,7 @@ Universal sectioning <sectioning>
 Assembly and fixing <assembly-and-fixing>
 Transition editing <transition-edit>
 C10 turnout placement and editing <turnout-placement-and-editing>
+Crossover geometry and preflight <crossover-geometry>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.
