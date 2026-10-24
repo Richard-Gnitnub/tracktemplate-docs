@@ -1,0 +1,6 @@
+interface:
+  display_name: "TrackTemplate docs context compaction"
+  short_description: "Save a precise packet before a context change"
+  default_prompt: "Use $tracktemplate-docs-context-compaction to prepare a concise context packet for the current TrackTemplate documentation task."
+policy:
+  allow_implicit_invocation: true

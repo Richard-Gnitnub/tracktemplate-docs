@@ -25,6 +25,11 @@ authoring, STE100, review and documentation alignment. Preserve technical
 meaning and exact identifiers. Keep the source requirements and acceptance
 with their workbench owners. Use the existing free publishing and build tools.
 
+Use context-packet preparation and recovery skills to retain the authorised
+task, source evidence, unfinished work and review stage across long sessions
+and delegated work. Keep these temporary records separate from Git recovery
+checkpoints and from the host application's compaction mechanism.
+
 Use the workbench's `reference/TERMINOLOGY.md` as the canonical terminology
 register. Authors and reviewers must read its relevant entries, preserve their
 meaning and scope, and record the source and checked terms in the PR.

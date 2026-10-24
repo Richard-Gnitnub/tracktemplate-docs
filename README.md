@@ -55,8 +55,11 @@ which developer explanations still need writing. The terminology guide requires
 authors and reviewers to read the relevant workbench register entries and record
 their source revision, meaning and scope in the PR.
 
-[AGENTS.md](AGENTS.md) routes repository agents to four adapted skills for
-authoring, STE100 assistance, independent review and documentation alignment.
+[AGENTS.md](AGENTS.md) routes repository agents to six skills for authoring,
+STE100 assistance, independent review, documentation alignment, context-packet
+preparation and context recovery. [Agent context and recovery](docs/agent-context.md)
+explains their triggers, lead and worker responsibilities, and the distinction
+between a temporary packet and platform-managed compaction.
 The workflow uses the existing free Sphinx/Read the Docs setup. It does not
 require a paid language service or claim formal STE100 conformance from a build.
 
@@ -84,6 +87,7 @@ code.
 The Makefile adapts the earlier Companion/Railworks Sphinx scaffold.
 [NOTICE.md](NOTICE.md) records the source revisions and scope.
 [LICENSE](LICENSE) preserves the original MIT notice.
-Adapted TrackTemplate skills, the terminology guide, the source-based handbook
-chapters and the explanatory figure tools and assets retain GPL-3.0-or-later.
+Adapted TrackTemplate skills, the terminology and agent-context guides,
+the source-based handbook chapters and the explanatory figure tools and assets
+retain GPL-3.0-or-later.
 [NOTICE.md](NOTICE.md) identifies the covered paths and sources.
