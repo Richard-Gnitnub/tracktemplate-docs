@@ -1,0 +1,43 @@
+{
+  "description": "Independent handbook arithmetic; not a workbench or GUI test result.",
+  "source_revision": "7965bfc4671668f889c1f43fb8336c5146c3f5cf",
+  "retained_matched_length_mm": 559.4102547270278,
+  "circle_centre_mm": [
+    297.51728975552163,
+    624.7779655573173
+  ],
+  "main": {
+    "radius_mm": 600.0,
+    "transition_length_each_mm": 600.0,
+    "transition_angle_each_rad": 0.5,
+    "transition_angle_each_deg": 28.64788975654116,
+    "start_x_mm": 0.0,
+    "start_y_mm": 0.0,
+    "circular_angle_deg": 32.70422048691768,
+    "circular_length_mm": 342.4777960769379,
+    "core_length_mm": 1542.477796076938
+  },
+  "outside_matched": {
+    "radius_mm": 655.0,
+    "transition_length_each_mm": 559.4102547270278,
+    "transition_angle_each_rad": 0.42703072879925785,
+    "transition_angle_each_deg": 24.46705848259313,
+    "start_x_mm": 19.503765934311787,
+    "start_y_mm": -50.000000001875634,
+    "circular_angle_deg": 41.06588303481374,
+    "circular_length_mm": 469.46133932362943,
+    "core_length_mm": 1588.281848777685
+  },
+  "outside_manual_600": {
+    "radius_mm": 655.0,
+    "transition_length_each_mm": 600.0,
+    "transition_angle_each_rad": 0.4580152671755725,
+    "transition_angle_each_deg": 26.242341761717093,
+    "start_x_mm": -0.3971123293644041,
+    "start_y_mm": -52.95198504041048,
+    "circular_angle_deg": 37.515316476565815,
+    "circular_length_mm": 428.8715940506573,
+    "core_length_mm": 1628.8715940506572
+  },
+  "drawing": "Smooth Euler equations, 101 drawing points per section; no host sampling claim."
+}

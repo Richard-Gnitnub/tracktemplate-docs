@@ -7,9 +7,9 @@ templates inside FreeCAD. Its [product vision](https://github.com/Richard-Gnitnu
 explains the intended Workbench and the current migration programme.
 
 ```{note}
-The original orientation pages use source snapshot `54c5903b`. The authoring
-guide, terminology guide, GUI coverage map and transition-edit walkthrough use
-`7965bfc`.
+The original orientation material uses source snapshot `54c5903b`. The authoring
+guide, terminology guide, GUI coverage map and handbook chapters on generation,
+curves and spacing, and transition editing use `7965bfc`.
 Both snapshots were examined on 24 October 2026; each explanation identifies
 its source boundary.
 The [live project plan](https://github.com/Richard-Gnitnub/tracktemplate/blob/main/reference/PROJECT_PLAN.md)
@@ -22,7 +22,9 @@ owns current project status.
 | --- | --- |
 | Build or edit this documentation | [Development environment](development.md) |
 | Understand the code boundaries | [Architecture](architecture.md) |
-| Follow a GUI operation through the code | [A transition edit](handbook/transition-edit.md) |
+| Follow the main generation and replacement workflow | [Generate a template set](handbook/generate-template-set.md) |
+| Understand curves, easements and independent track spacing | [Curves and spacing](handbook/curves-and-spacing.md) |
+| Follow the separate canonical transition editor | [A transition edit](handbook/transition-edit.md) |
 | Find a workflow to document | [GUI coverage](gui-coverage.md) |
 | Write a narrated technical explanation | [Authoring the handbook](authoring.md) |
 | Use the project's railway and software terms | [Using TrackTemplate terminology](terminology.md) |
@@ -42,6 +44,8 @@ documentation is separate later work tracked in
 
 development
 architecture
+handbook/generate-template-set
+handbook/curves-and-spacing
 handbook/transition-edit
 gui-coverage
 authoring
