@@ -32,13 +32,15 @@ live in `docs/conf.py`; the small colour adjustments live in
 ## Regenerate the alignment figures
 
 The [curves and spacing chapter](handbook/curves-and-spacing.md),
-[straight-route chapter](handbook/straight-routes.md) and
-[physical-platform chapter](handbook/platforms.md) use committed SVG figures
+[straight-route chapter](handbook/straight-routes.md),
+[physical-platform chapter](handbook/platforms.md) and
+[formation-board chapter](handbook/formation-board.md) use committed SVG figures
 and numerical JSON records. The Sphinx build reads these assets directly;
 Matplotlib is needed only to regenerate them. To run the optional
 [curve figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_alignment_figures.py),
-[straight figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_straight_route_figure.py)
-and [platform figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_platform_figures.py)
+[straight figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_straight_route_figure.py),
+[platform figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_platform_figures.py)
+and [formation figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_formation_figures.py)
 in a separate environment, use these commands from the repository root:
 
 ```bash
@@ -47,6 +49,7 @@ _build/figure-env/bin/python -m pip install matplotlib==3.10.8
 _build/figure-env/bin/python tools/render_alignment_figures.py
 _build/figure-env/bin/python tools/render_straight_route_figure.py
 _build/figure-env/bin/python tools/render_platform_figures.py
+_build/figure-env/bin/python tools/render_formation_figures.py
 ```
 
 The curve tool rewrites `euler-two-track-example.svg`, `euler-curvature-example.svg`
@@ -58,18 +61,30 @@ the same assets directory, with its PNG and cache under `_build/straight-review/
 The platform tool rewrites `platform-plan-example.svg`,
 `platform-profiles-example.svg` and `platform-example-values.json`, with its
 PNG inspection copies and cache under `_build/platform-review/`.
+The formation tool rewrites `formation-cross-section-example.svg`,
+`formation-width-example.svg` and `formation-example-values.json`, with its
+PNG inspection copies and cache under `_build/formation-review/`.
 Review the changed assets and rendered chapter before including regenerated
 output in a contribution.
 
 These tools make independent mathematical illustrations using equations from
 workbench revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
-The curve tool also uses retained fixture values. The straight and platform
-tools use inputs chosen for the handbook; the platform plan uses the retained
-Outside-track radius and solved transition length from the curve example.
+The curve tool also uses retained fixture values. The straight, platform and
+formation tools use inputs chosen for the handbook; the platform plan uses the
+retained Outside-track radius and solved transition length from the curve
+example. The formation figures use nominal concentric cross-sections and a
+continuous illustration of edge broadening, not the host's sampled projection.
 The scripts use standard Python and Matplotlib; they do not import or run
 workbench code or FreeCAD. Their arithmetic comparisons do not validate
 workbench geometry. Each chapter explains its representation boundary.
+
+The formation tool can also check its arithmetic and committed numerical record
+without Matplotlib or rewriting the figures:
+
+```bash
+python tools/render_formation_figures.py --check-only
+```
 
 ## Work on the FreeCAD code
 
