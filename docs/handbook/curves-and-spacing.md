@@ -361,6 +361,11 @@ preserve perpendicular spacing. After handedness is applied, the host sets
 first point. This differs from the nominal sum of analytical segment lengths.
 [Extensions][extensions]; [host order][host-preparation]; [stationing][stationing]
 
+The [Straight Track Manager walkthrough](straight-routes.md#join-the-completed-curve-family)
+continues the matched-spacing Euler example with 600 mm entrance and exit
+routes. Those routes join the completed curve endpoints after these automatic
+extensions.
+
 In this generation route, `create_centreline_wire` calls `Part.makePolygon`.
 The strip builder offsets sampled points by half the width along their
 normals, closes a polygonal boundary and extrudes its face. A smooth-looking

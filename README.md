@@ -45,7 +45,8 @@ owns current project status.
 The [authoring guide](docs/authoring.md), [terminology guide](docs/terminology.md),
 [GUI coverage map](docs/gui-coverage.md),
 [generation walkthrough](docs/handbook/generate-template-set.md),
-[curves and spacing chapter](docs/handbook/curves-and-spacing.md), and
+[curves and spacing chapter](docs/handbook/curves-and-spacing.md),
+[straight-route chapter](docs/handbook/straight-routes.md), and
 [transition-edit walkthrough](docs/handbook/transition-edit.md) use workbench
 revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
@@ -71,11 +72,11 @@ deliberately when updating dependencies, then rebuild before proposing the chang
 `_build/`. The build uses Sphinx, MyST Markdown and the PyData theme; it does
 not import TrackTemplate or require FreeCAD.
 
-The curve chapter's explanatory SVG figures and numerical JSON are committed
+The curve and straight chapters' explanatory SVG figures and numerical JSON are committed
 assets. [Optional figure-regeneration instructions](docs/development.md#regenerate-the-alignment-figures)
 use a separate Python environment with Matplotlib 3.10.8. Sphinx consumes the
-assets directly and needs no additional dependency. The figure tool performs
-independent mathematical calculations; it does not import or execute workbench
+assets directly and needs no additional dependency. The figure tools perform
+independent mathematical calculations; they do not import or execute workbench
 code.
 
 ## Scaffold origins
@@ -84,5 +85,5 @@ The Makefile adapts the earlier Companion/Railworks Sphinx scaffold.
 [NOTICE.md](NOTICE.md) records the source revisions and scope.
 [LICENSE](LICENSE) preserves the original MIT notice.
 Adapted TrackTemplate skills, the terminology guide, the source-based handbook
-chapters and the explanatory figure tool and assets retain GPL-3.0-or-later.
+chapters and the explanatory figure tools and assets retain GPL-3.0-or-later.
 [NOTICE.md](NOTICE.md) identifies the covered paths and sources.

@@ -31,30 +31,38 @@ live in `docs/conf.py`; the small colour adjustments live in
 
 ## Regenerate the alignment figures
 
-The [curves and spacing chapter](handbook/curves-and-spacing.md) uses committed
-SVG figures and a numerical JSON record. The Sphinx build reads these assets
-directly; Matplotlib is needed only to regenerate them. To run the optional
-[figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_alignment_figures.py)
+The [curves and spacing chapter](handbook/curves-and-spacing.md) and
+[straight-route chapter](handbook/straight-routes.md) use committed SVG figures
+and numerical JSON records. The Sphinx build reads these assets directly;
+Matplotlib is needed only to regenerate them. To run the optional
+[curve figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_alignment_figures.py)
+and [straight figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_straight_route_figure.py)
 in a separate environment, use these commands from the repository root:
 
 ```bash
 python3.13 -m venv _build/figure-env
 _build/figure-env/bin/python -m pip install matplotlib==3.10.8
 _build/figure-env/bin/python tools/render_alignment_figures.py
+_build/figure-env/bin/python tools/render_straight_route_figure.py
 ```
 
-The tool rewrites `euler-two-track-example.svg`, `euler-curvature-example.svg`
+The curve tool rewrites `euler-two-track-example.svg`, `euler-curvature-example.svg`
 and `alignment-example-values.json` under `docs/_static/figures/`. It also
 writes PNG inspection copies and its Matplotlib cache under
-`_build/generation-review/`. Review the changed assets and rendered chapter
-before including regenerated output in a contribution.
+`_build/generation-review/`. The straight tool rewrites
+`straight-route-direction.svg` and `straight-route-example-values.json` in
+the same assets directory, with its PNG and cache under `_build/straight-review/`.
+Review the changed assets and rendered chapter before including regenerated
+output in a contribution.
 
-These are independent mathematical illustrations using equations and retained
-fixture values from workbench revision
+Both tools make independent mathematical illustrations using equations from
+workbench revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
-The script uses standard Python and Matplotlib; it does not import or run
-workbench code or FreeCAD. Its arithmetic comparisons do not validate the
-workbench's sampled geometry. The chapter explains that representation boundary.
+The curve tool also uses retained fixture values. The straight tool uses
+inputs chosen for the handbook.
+The scripts use standard Python and Matplotlib; they do not import or run
+workbench code or FreeCAD. Their arithmetic comparisons do not validate
+workbench geometry. Each chapter explains its representation boundary.
 
 ## Work on the FreeCAD code
 
