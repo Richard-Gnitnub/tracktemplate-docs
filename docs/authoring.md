@@ -111,10 +111,15 @@ each paragraph one subject. Put a condition before the instruction it governs.
 Explain technical terms when the reader first needs them. Preserve necessary
 qualifications and numerical conditions when shortening prose.
 
-Use the workbench's technical-term register. Keep code, UI labels, commands,
-property names, diagnostics, equations, hashes and external quotations exact.
-A new term that needs canonical approval remains a question for its owner;
-the handbook must not silently approve it.
+Follow [Using TrackTemplate terminology](terminology.md). Before drafting or
+reviewing technical prose, read the relevant entries in the actual workbench
+`reference/TERMINOLOGY.md` at the recorded source revision. Check each meaning,
+preferred form, assurance state and scope, including any candidate-bound limit.
+Record the revision and checked entries in the PR's terminology field.
+
+Keep code, UI labels, commands, property names, diagnostics, equations, hashes
+and external quotations exact. A new term that needs canonical approval remains
+a question for its workbench owner; the handbook must not silently approve it.
 
 ASD-STE100 Issue 9 is the external controlled-writing reference used by the
 upstream profile. Consult the official source when applying its vocabulary or
@@ -154,7 +159,7 @@ no paid writing service or additional publishing platform.
 ## One authoring and review cycle
 
 1. Establish the reader need, page scope, source revision and technical owner.
-   Read the relevant existing page before deciding to add another one.
+   Read the relevant existing page and terminology entries before drafting.
 2. Prepare the complete candidate. Check its claims, terminology, examples,
    links and assembled diff before handoff.
 3. Identify the exact candidate with a Git commit, or a baseline, diff and file

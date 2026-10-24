@@ -12,6 +12,8 @@ Adapted for tracktemplate-docs on 2026-10-24. See ../../../NOTICE.md.
 ## Responsibility
 
 Read the [shared authoring profile](../../../docs/authoring.md) first.
+Apply [Using TrackTemplate terminology](../../../docs/terminology.md) and
+read the relevant upstream entries at the recorded revision.
 Review the complete frozen scope supplied by the author. Remain read-only.
 Do not author the candidate, apply corrections, approve upstream engineering
 decisions, or give merge, release, phase or output-use acceptance.
@@ -46,6 +48,11 @@ language or formal-standard checks need it; do not add another review stage.
   unresolved questions. Keep headless evidence separate from GUI acceptance.
 - Check source authority and revision dates. A handbook explanation can teach
   the design; it must not replace upstream requirements, terminology or status.
+- Check the PR's terminology record against the actual prose and source
+  entries. Verify controlled meaning, preferred form, assurance state and scope.
+  Do not transfer a candidate-bound admission to a new occurrence or treat a
+  quoted legacy label as an accepted current term. Report a missing source or
+  unresolved meaning without inventing a replacement definition.
 - Preserve qualifications, provenance, licence boundaries and output-use
   limits. Do not resolve a technical or rights question by changing its words.
 - Check that a claimed common GUI, Python or AI route has implementation

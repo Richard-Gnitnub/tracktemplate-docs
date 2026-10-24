@@ -2,9 +2,13 @@
 
 ## Source basis
 
-The technical links on this site use TrackTemplate revision
+The pinned source links on this reference page use TrackTemplate revision
 [`54c5903b41e89d1fdfb430c812495e36b91d690b`](https://github.com/Richard-Gnitnub/tracktemplate/tree/54c5903b41e89d1fdfb430c812495e36b91d690b),
 examined on 24 October 2026. This makes the initial reading path reproducible.
+
+The handbook's newer pages identify their own source revisions.
+[Using TrackTemplate terminology](terminology.md) gives the terminology reading
+baseline and explains how authors and reviewers must apply the register.
 
 Use the [live project plan](https://github.com/Richard-Gnitnub/tracktemplate/blob/main/reference/PROJECT_PLAN.md)
 when you need current progress. A snapshot link records what this site was
@@ -20,7 +24,7 @@ prepared against; it is not a claim that the source remains the latest version.
 | Capability evidence | [Capability matrix](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/CAPABILITY_MATRIX.md) |
 | Validation and test selection | [Validation](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/VALIDATION.md) and [testing policy](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/TESTING_POLICY.md) |
 | Engineering and documentation management | [Engineering policy](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/ENGINEERING_POLICY.md) |
-| Railway and project terms | [Terminology](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/TERMINOLOGY.md) |
+| Railway and project terms | [Terminology usage and source register](terminology.md) |
 | Rights and source lineage | [Licensing boundaries](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/LICENSING_BOUNDARIES.md) and [provenance](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/PROVENANCE.md) |
 | Recovery and preservation | [Recovery and backup](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/RECOVERY_AND_BACKUP.md) |
 | Contribution and workflow routes | [Contributing](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/CONTRIBUTING.md) and [workflow catalogue](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/AGENT_WORKFLOWS.md) |

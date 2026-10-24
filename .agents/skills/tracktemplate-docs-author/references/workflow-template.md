@@ -18,6 +18,11 @@ Record the complete workbench source revision and the reviewed implementation
 boundary. State whether the route uses package code, retained host code or
 both. Put a material experimental limitation beside the relevant capability.
 
+Before drafting, apply [Using TrackTemplate terminology](../../../../docs/terminology.md).
+Read the relevant upstream entries and check their meaning, assurance state and
+scope. Record the source revision, checked terms and unresolved findings in the
+PR. Explain terms on the page where the reader needs them.
+
 ## GUI entry point
 
 Name the exact visible control, where it appears and when it is available.

@@ -42,10 +42,13 @@ examined on 24 October 2026. The separately labelled
 [live project plan](https://github.com/Richard-Gnitnub/tracktemplate/blob/main/reference/PROJECT_PLAN.md)
 owns current project status.
 
-The [authoring guide](docs/authoring.md), [GUI coverage map](docs/gui-coverage.md)
-and [transition-edit walkthrough](docs/handbook/transition-edit.md) use workbench
+The [authoring guide](docs/authoring.md), [terminology guide](docs/terminology.md),
+[GUI coverage map](docs/gui-coverage.md) and
+[transition-edit walkthrough](docs/handbook/transition-edit.md) use workbench
 revision `7965bfc4671668f889c1f43fb8336c5146c3f5cf`. The coverage map records
-which developer explanations still need writing.
+which developer explanations still need writing. The terminology guide requires
+authors and reviewers to read the relevant workbench register entries and record
+their source revision, meaning and scope in the PR.
 
 [AGENTS.md](AGENTS.md) routes repository agents to four adapted skills for
 authoring, STE100 assistance, independent review and documentation alignment.
@@ -69,5 +72,6 @@ not import TrackTemplate or require FreeCAD.
 The Makefile adapts the earlier Companion/Railworks Sphinx scaffold.
 [NOTICE.md](NOTICE.md) records the source revisions and scope.
 [LICENSE](LICENSE) preserves the original MIT notice.
-Adapted TrackTemplate skills and the source-based transition-edit chapter retain
-GPL-3.0-or-later. [NOTICE.md](NOTICE.md) identifies the covered paths and sources.
+Adapted TrackTemplate skills, the terminology guide and the source-based
+transition-edit chapter retain GPL-3.0-or-later.
+[NOTICE.md](NOTICE.md) identifies the covered paths and sources.
