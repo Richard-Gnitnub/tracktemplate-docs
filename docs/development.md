@@ -33,14 +33,16 @@ live in `docs/conf.py`; the small colour adjustments live in
 
 The [curves and spacing chapter](handbook/curves-and-spacing.md),
 [straight-route chapter](handbook/straight-routes.md),
-[physical-platform chapter](handbook/platforms.md) and
-[formation-board chapter](handbook/formation-board.md) use committed SVG figures
+[physical-platform chapter](handbook/platforms.md),
+[formation-board chapter](handbook/formation-board.md) and
+[sectioning chapter](handbook/sectioning.md) use committed SVG figures
 and numerical JSON records. The Sphinx build reads these assets directly;
 Matplotlib is needed only to regenerate them. To run the optional
 [curve figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_alignment_figures.py),
 [straight figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_straight_route_figure.py),
-[platform figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_platform_figures.py)
-and [formation figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_formation_figures.py)
+[platform figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_platform_figures.py),
+[formation figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_formation_figures.py)
+and [section figure tool](https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_section_figures.py)
 in a separate environment, use these commands from the repository root:
 
 ```bash
@@ -50,6 +52,7 @@ _build/figure-env/bin/python tools/render_alignment_figures.py
 _build/figure-env/bin/python tools/render_straight_route_figure.py
 _build/figure-env/bin/python tools/render_platform_figures.py
 _build/figure-env/bin/python tools/render_formation_figures.py
+_build/figure-env/bin/python tools/render_section_figures.py
 ```
 
 The curve tool rewrites `euler-two-track-example.svg`, `euler-curvature-example.svg`
@@ -64,26 +67,33 @@ PNG inspection copies and cache under `_build/platform-review/`.
 The formation tool rewrites `formation-cross-section-example.svg`,
 `formation-width-example.svg` and `formation-example-values.json`, with its
 PNG inspection copies and cache under `_build/formation-review/`.
+The section tool rewrites `section-lengths-example.svg`,
+`section-shared-boundaries-example.svg` and `section-example-values.json`, with
+its PNG inspection copies and cache under `_build/section-review/`.
 Review the changed assets and rendered chapter before including regenerated
 output in a contribution.
 
 These tools make independent mathematical illustrations using equations from
 workbench revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
-The curve tool also uses retained fixture values. The straight, platform and
-formation tools use inputs chosen for the handbook; the platform plan uses the
-retained Outside-track radius and solved transition length from the curve
+The curve tool also uses retained fixture values. The straight, platform,
+formation and section tools use inputs chosen for the handbook; the platform
+plan uses the retained Outside-track radius and solved transition length from the curve
 example. The formation figures use nominal concentric cross-sections and a
 continuous illustration of edge broadening, not the host's sampled projection.
+The section tool compares balanced and unbalanced lengths and draws shared
+cuts through a new ideal circular family. It does not perform native Boolean
+cuts or execute the workbench's partition validator.
 The scripts use standard Python and Matplotlib; they do not import or run
 workbench code or FreeCAD. Their arithmetic comparisons do not validate
 workbench geometry. Each chapter explains its representation boundary.
 
-The formation tool can also check its arithmetic and committed numerical record
-without Matplotlib or rewriting the figures:
+The formation and section tools can also check their arithmetic and committed
+numerical records without Matplotlib or rewriting the figures:
 
 ```bash
 python tools/render_formation_figures.py --check-only
+python tools/render_section_figures.py --check-only
 ```
 
 ## Work on the FreeCAD code
