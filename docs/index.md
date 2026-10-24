@@ -9,7 +9,7 @@ explains the intended Workbench and the current migration programme.
 ```{note}
 The original orientation material uses source snapshot `54c5903b`. The authoring
 guide, terminology guide, GUI coverage map and handbook chapters on generation,
-curves and spacing, and transition editing use `7965bfc`.
+curves and spacing, straight routes, and transition editing use `7965bfc`.
 Both snapshots were examined on 24 October 2026; each explanation identifies
 its source boundary.
 The [live project plan](https://github.com/Richard-Gnitnub/tracktemplate/blob/main/reference/PROJECT_PLAN.md)
@@ -24,6 +24,7 @@ owns current project status.
 | Understand the code boundaries | [Architecture](architecture.md) |
 | Follow the main generation and replacement workflow | [Generate a template set](handbook/generate-template-set.md) |
 | Understand curves, easements and independent track spacing | [Curves and spacing](handbook/curves-and-spacing.md) |
+| Follow straight datums, travel direction and curve connections | [Straight routes](handbook/straight-routes.md) |
 | Follow the separate canonical transition editor | [A transition edit](handbook/transition-edit.md) |
 | Find a workflow to document | [GUI coverage](gui-coverage.md) |
 | Write a narrated technical explanation | [Authoring the handbook](authoring.md) |
@@ -46,6 +47,7 @@ development
 architecture
 handbook/generate-template-set
 handbook/curves-and-spacing
+handbook/straight-routes
 handbook/transition-edit
 gui-coverage
 authoring

@@ -1,0 +1,117 @@
+{
+  "licence": "GPL-3.0-or-later",
+  "copyright": "Copyright (C) 2026 Richard-Gnitnub and TrackTemplateMacro contributors.",
+  "description": "Independent handbook arithmetic; not a workbench or GUI test result.",
+  "source_revision": "7965bfc4671668f889c1f43fb8336c5146c3f5cf",
+  "equation_sources": [
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/domain/alignment.py#L116-L117",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/domain/alignment.py#L1558-L1590"
+  ],
+  "inputs": {
+    "connection_mode": "Independent datum",
+    "datum_mm": [
+      100.0,
+      200.0
+    ],
+    "rotation_degrees": 0.0,
+    "length_mm": 600.0,
+    "track_count": 2,
+    "track_spacing_mm": 50.0,
+    "parallel_side": "Left of travel"
+  },
+  "units": {
+    "coordinate_and_length": "mm",
+    "heading_rad": "radians",
+    "heading_deg": "degrees",
+    "unit_tangent_and_normal": "dimensionless"
+  },
+  "evidence_limits": [
+    "The inputs were chosen for this handbook, not taken from a runtime receipt.",
+    "No workbench module, project test, validator, macro or FreeCAD process ran.",
+    "Assertions check the independent illustration, not workbench implementation.",
+    "Only mathematical centrelines are illustrated; strip and gauge are absent.",
+    "The illustration does not establish GUI behaviour or physical fit."
+  ],
+  "floating_point_note": "JSON retains the calculated Python binary floating-point values without decimal rounding. The Reverse calculation includes the small sin(pi) residual. SVG coordinate labels round to whole millimetres.",
+  "illustration_check_absolute_tolerance_mm": 1e-10,
+  "directions": [
+    {
+      "direction": "Forward",
+      "heading_rad": 0.0,
+      "heading_deg": 0.0,
+      "unit_tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "unit_left_normal_xy": [
+        -0.0,
+        1.0
+      ],
+      "tracks": [
+        {
+          "track_number": 1,
+          "offset_left_of_travel_mm": 0.0,
+          "start_mm": [
+            100.0,
+            200.0
+          ],
+          "finish_mm": [
+            700.0,
+            200.0
+          ]
+        },
+        {
+          "track_number": 2,
+          "offset_left_of_travel_mm": 50.0,
+          "start_mm": [
+            100.0,
+            250.0
+          ],
+          "finish_mm": [
+            700.0,
+            250.0
+          ]
+        }
+      ]
+    },
+    {
+      "direction": "Reverse",
+      "heading_rad": 3.141592653589793,
+      "heading_deg": 180.0,
+      "unit_tangent_xy": [
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "unit_left_normal_xy": [
+        -1.2246467991473532e-16,
+        -1.0
+      ],
+      "tracks": [
+        {
+          "track_number": 1,
+          "offset_left_of_travel_mm": 0.0,
+          "start_mm": [
+            100.0,
+            200.0
+          ],
+          "finish_mm": [
+            -500.0,
+            200.00000000000009
+          ]
+        },
+        {
+          "track_number": 2,
+          "offset_left_of_travel_mm": 50.0,
+          "start_mm": [
+            100.0,
+            150.0
+          ],
+          "finish_mm": [
+            -500.0,
+            150.00000000000009
+          ]
+        }
+      ]
+    }
+  ]
+}
