@@ -19,6 +19,7 @@ Straight routes <straight-routes>
 Physical platforms <platforms>
 Formation boards <formation-board>
 Universal sectioning <sectioning>
+Assembly and fixing <assembly-and-fixing>
 Transition editing <transition-edit>
 ```
 
