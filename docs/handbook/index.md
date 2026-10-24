@@ -9,6 +9,9 @@ Start with [Generate a template set](generate-template-set.md) for the main
 generation and replacement workflow. The calculation and output chapters
 explain its individual features. [Transition editing](transition-edit.md)
 covers a separately activated editor for Euler (clothoid) transitions.
+[C10 turnout placement and editing](turnout-placement-and-editing.md) follows
+the switch-toe position through the host alignment, source geometry and
+transactional changes to a managed turnout.
 
 ```{toctree}
 :maxdepth: 1
@@ -21,6 +24,7 @@ Formation boards <formation-board>
 Universal sectioning <sectioning>
 Assembly and fixing <assembly-and-fixing>
 Transition editing <transition-edit>
+C10 turnout placement and editing <turnout-placement-and-editing>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.
