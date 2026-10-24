@@ -407,8 +407,9 @@ copy. [Close behaviour][remove-ui]; [integration][integration]
   source-labelled rail, timber and datum roles without approving disputed
   prototype nomenclature or a finished physical turnout design.
 - The C10 geometry is fixed at this implementation stage. Host integration,
-  crossovers, chair fit and production readiness have additional checks and
-  their own [GUI coverage](../gui-coverage.md). A successful Create or Apply
+  [crossover geometry](crossover-geometry.md), chair fit and production
+  readiness have additional checks and their own
+  [GUI coverage](../gui-coverage.md). A successful Create or Apply
   does not constitute approval of production chairs or physical clearances.
   ASD-STE100 Issue 9 conformance has **not** been formally verified for this
   chapter.
