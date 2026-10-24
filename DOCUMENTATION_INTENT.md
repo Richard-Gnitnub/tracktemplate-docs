@@ -14,6 +14,17 @@ The reusable source is [Railworks-Documentation at 0129517](https://github.com/R
 
 Create a separate `tracktemplate-docs` repository derived from that source, preserving its history and attribution. Use it for site configuration, navigation and contributor explanations. Keep technical requirements, project status, decisions and evidence in their existing owners in `tracktemplate`.
 
+Explain every current GUI workflow from its railway purpose through the code
+to its visible and stored results. Use short code blocks with connected
+narration, worked values, failure behaviour and source links. Explain recorded
+design intent and identify reasoning inferred from the implementation. Keep the
+wiki as the development journal.
+
+Adapt the relevant TrackTemplate technical-authoring, STE100, review and
+alignment skills for this handbook. Preserve technical meaning and exact
+identifiers. Keep the source requirements and acceptance with their workbench
+owners. Use the existing free publishing and build tools.
+
 Starting stack: Sphinx 9.2.0, PyData Sphinx Theme 0.23.0 and MyST-Parser 5.1.0, with a separate Python 3.13 documentation environment. Read the Docs provides hosting. Keep reStructuredText support alongside Markdown.
 
 Begin with six areas:
@@ -34,10 +45,13 @@ Begin with six areas:
 5. The site clearly identifies development material, current implementation and future intent.
 6. A reviewer can inspect the generated site before publication.
 7. Original notices remain with reused scaffold material; imported build output and caches do not become maintained source.
+8. A source-pinned coverage map identifies GUI workflow families and the depth of documentation available for each.
+9. Repository agents use a shared authoring profile and reusable skills for narrated explanations, terminology, one independent review and alignment.
+10. Formal STE100 claims name their official-source review and scope. Build and style checks alone do not establish conformance.
 
 ## Scope and related work
 
-The initial work establishes the developer publication structure and a small set of useful pages. Apply TrackTemplate's existing documentation controls where canonical prose changes.
+The initial work establishes the developer publication structure and a small set of useful pages. The next stage adds the authoring workflow, a GUI coverage map and worked implementation explanations. Apply TrackTemplate's existing documentation controls where upstream canonical prose changes. The derived handbook uses its explicitly scoped authoring profile.
 
 User guidance remains the later work in [tracktemplate#179](https://github.com/Richard-Gnitnub/tracktemplate/issues/179), scheduled after Phase 11. The consolidation in [tracktemplate#180](https://github.com/Richard-Gnitnub/tracktemplate/issues/180) remains separate. This initiative adds no new phase exit, decision register or evidence store and does not establish product or output acceptance.
 

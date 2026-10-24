@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrackTemplate docs author"
+  short_description: "Explain GUI workflows and code with design intent"
+  default_prompt: "Use $tracktemplate-docs-author to write a source-backed developer walkthrough for a TrackTemplate GUI workflow."

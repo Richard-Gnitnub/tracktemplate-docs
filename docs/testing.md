@@ -2,6 +2,16 @@
 
 ## Documentation checks
 
+Check the repository's agent-skill metadata and local guidance links:
+
+```bash
+python tools/validate_agent_skills.py
+```
+
+This catches missing skill descriptions, inconsistent invocation metadata and
+broken local guidance paths. It does not assess prose or formal STE100
+conformance. The [authoring guide](authoring.md) defines those review boundaries.
+
 Build the site with warnings treated as errors:
 
 ```bash
@@ -17,7 +27,7 @@ Inspect the changed pages in the browser. Check navigation, headings, code
 blocks and tables at desktop and narrow-screen widths. Confirm that each
 source link points to the intended file and revision.
 
-GitHub Actions runs the strict HTML build and retains the result as an
+GitHub Actions runs the skill checks and strict HTML build, then retains an
 artifact for review. Read the Docs builds the hosted site.
 
 For a pull request, open the Read the Docs check's Details link and inspect
