@@ -1,0 +1,298 @@
+{
+  "licence": "GPL-3.0-or-later",
+  "copyright": "Copyright (C) 2026 Richard-Gnitnub and TrackTemplateMacro contributors.",
+  "description": "Independent nominal handbook arithmetic; not a workbench or FreeCAD result.",
+  "source_revision": "7965bfc4671668f889c1f43fb8336c5146c3f5cf",
+  "equation_sources": [
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L10156-L10459",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L10461-L10521",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L11505-L11534",
+    "https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L11782-L11796"
+  ],
+  "inputs": {
+    "main_radius_mm": 600.0,
+    "outer_radius_mm": 655.0,
+    "template_strip_width_each_mm": 32.0,
+    "both_template_strips_enabled": true,
+    "platform_host": "Outer track, Right of travel",
+    "platform_length_on_outer_track_mm": 150.0,
+    "platform_end_length_each_on_outer_track_mm": 30.0,
+    "platform_clearance_from_outer_centreline_mm": 20.0,
+    "platform_full_width_mm": 30.0,
+    "platform_full_height_mm": 12.0,
+    "platform_nose_width_mm": 0.1,
+    "outer_margin_mm": 10.0,
+    "minimum_width_mm": 120.0,
+    "board_thickness_mm": 12.0,
+    "maximum_transverse_slope_mm_per_main_station_mm": 0.5
+  },
+  "frame": {
+    "lateral_coordinate": "Positive left of the main track's travel direction; main centreline is zero. This is the source's left-normal frame.",
+    "longitudinal_coordinate": "Ideal main-centreline arc distance from the normal through the nominal platform start, in travel direction.",
+    "station_conversion": "s_main = u_outer * 600/655. This is ideal common-angle arc arithmetic, not sampled host station mapping.",
+    "vertical_coordinate": "Top of formation board is Z=0; its 12 mm extrusion extends to Z=-12."
+  },
+  "nominal_occupied_left_and_right_offsets_mm": {
+    "main_strip": {
+      "left": 16.0,
+      "right": -16.0
+    },
+    "outer_strip": {
+      "left": -39.0,
+      "right": -71.0
+    },
+    "full_width_platform": {
+      "left": -75.0,
+      "right": -105.0
+    }
+  },
+  "midpoint_cross_sections": [
+    {
+      "include_platform": false,
+      "occupied_left_offset_mm": 16.0,
+      "occupied_right_offset_mm": -71.0,
+      "occupied_width_mm": 87.0,
+      "margin_left_offset_mm": 26.0,
+      "margin_right_offset_mm": -81.0,
+      "margin_width_mm": 107.0,
+      "final_left_offset_mm": 32.5,
+      "final_right_offset_mm": -87.5,
+      "final_width_mm": 120.0,
+      "minimum_width_added_each_side_mm": 6.5,
+      "board_top_z_mm": 0.0,
+      "board_bottom_z_mm": -12.0
+    },
+    {
+      "include_platform": true,
+      "occupied_left_offset_mm": 16.0,
+      "occupied_right_offset_mm": -105.0,
+      "occupied_width_mm": 121.0,
+      "margin_left_offset_mm": 26.0,
+      "margin_right_offset_mm": -115.0,
+      "margin_width_mm": 141.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0,
+      "minimum_width_added_each_side_mm": 0.0,
+      "board_top_z_mm": 0.0,
+      "board_bottom_z_mm": -12.0
+    }
+  ],
+  "nominal_main_per_outer_arc_ratio": 0.916030534351145,
+  "nominal_main_taper_length_mm": 27.48091603053435,
+  "nominal_main_platform_length_mm": 137.40458015267174,
+  "continuous_profile_table": [
+    {
+      "relative_main_arc_station_mm": 0.0,
+      "corresponding_outer_arc_station_mm": 0.0,
+      "raw_right_margin_offset_mm": -85.1,
+      "broadened_right_margin_offset_mm": -101.25954198473282,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -101.25954198473282,
+      "final_width_mm": 127.25954198473282
+    },
+    {
+      "relative_main_arc_station_mm": 2.7480916030534353,
+      "corresponding_outer_arc_station_mm": 3.0000000000000004,
+      "raw_right_margin_offset_mm": -88.0,
+      "broadened_right_margin_offset_mm": -102.63358778625954,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -102.63358778625954,
+      "final_width_mm": 128.63358778625954
+    },
+    {
+      "relative_main_arc_station_mm": 13.740458015267174,
+      "corresponding_outer_arc_station_mm": 15.0,
+      "raw_right_margin_offset_mm": -100.0,
+      "broadened_right_margin_offset_mm": -108.12977099236642,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -108.12977099236642,
+      "final_width_mm": 134.12977099236642
+    },
+    {
+      "relative_main_arc_station_mm": 27.48091603053435,
+      "corresponding_outer_arc_station_mm": 30.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    {
+      "relative_main_arc_station_mm": 68.70229007633587,
+      "corresponding_outer_arc_station_mm": 75.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    {
+      "relative_main_arc_station_mm": 109.9236641221374,
+      "corresponding_outer_arc_station_mm": 120.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    {
+      "relative_main_arc_station_mm": 123.66412213740458,
+      "corresponding_outer_arc_station_mm": 135.0,
+      "raw_right_margin_offset_mm": -100.0,
+      "broadened_right_margin_offset_mm": -108.12977099236642,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -108.12977099236642,
+      "final_width_mm": 134.12977099236642
+    },
+    {
+      "relative_main_arc_station_mm": 134.6564885496183,
+      "corresponding_outer_arc_station_mm": 146.99999999999997,
+      "raw_right_margin_offset_mm": -88.00000000000003,
+      "broadened_right_margin_offset_mm": -102.63358778625954,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -102.63358778625954,
+      "final_width_mm": 128.63358778625954
+    },
+    {
+      "relative_main_arc_station_mm": 137.40458015267174,
+      "corresponding_outer_arc_station_mm": 150.0,
+      "raw_right_margin_offset_mm": -85.1,
+      "broadened_right_margin_offset_mm": -101.25954198473283,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -101.25954198473283,
+      "final_width_mm": 127.25954198473283
+    }
+  ],
+  "continuous_transition_main_stations_mm": {
+    "broadening_start": -40.519083969465655,
+    "minimum_width_expansion_finishes": -14.519083969465651,
+    "platform_start": 0.0,
+    "full_platform_width_start": 27.48091603053435,
+    "platform_midpoint": 68.70229007633587,
+    "full_platform_width_finish": 109.9236641221374,
+    "platform_finish": 137.40458015267174,
+    "minimum_width_expansion_resumes": 151.92366412213738,
+    "broadening_finish": 177.92366412213738
+  },
+  "continuous_transition_values": {
+    "broadening_start": {
+      "relative_main_arc_station_mm": -40.519083969465655,
+      "corresponding_outer_arc_station_mm": -44.23333333333334,
+      "raw_right_margin_offset_mm": -81.0,
+      "broadened_right_margin_offset_mm": -81.0,
+      "final_left_offset_mm": 32.5,
+      "final_right_offset_mm": -87.5,
+      "final_width_mm": 120.0
+    },
+    "minimum_width_expansion_finishes": {
+      "relative_main_arc_station_mm": -14.519083969465651,
+      "corresponding_outer_arc_station_mm": -15.850000000000003,
+      "raw_right_margin_offset_mm": -81.0,
+      "broadened_right_margin_offset_mm": -94.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -94.0,
+      "final_width_mm": 120.0
+    },
+    "platform_start": {
+      "relative_main_arc_station_mm": 0.0,
+      "corresponding_outer_arc_station_mm": 0.0,
+      "raw_right_margin_offset_mm": -85.1,
+      "broadened_right_margin_offset_mm": -101.25954198473282,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -101.25954198473282,
+      "final_width_mm": 127.25954198473282
+    },
+    "full_platform_width_start": {
+      "relative_main_arc_station_mm": 27.48091603053435,
+      "corresponding_outer_arc_station_mm": 30.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    "platform_midpoint": {
+      "relative_main_arc_station_mm": 68.70229007633587,
+      "corresponding_outer_arc_station_mm": 75.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    "full_platform_width_finish": {
+      "relative_main_arc_station_mm": 109.9236641221374,
+      "corresponding_outer_arc_station_mm": 120.0,
+      "raw_right_margin_offset_mm": -115.0,
+      "broadened_right_margin_offset_mm": -115.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -115.0,
+      "final_width_mm": 141.0
+    },
+    "platform_finish": {
+      "relative_main_arc_station_mm": 137.40458015267174,
+      "corresponding_outer_arc_station_mm": 150.0,
+      "raw_right_margin_offset_mm": -85.1,
+      "broadened_right_margin_offset_mm": -101.25954198473283,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -101.25954198473283,
+      "final_width_mm": 127.25954198473283
+    },
+    "minimum_width_expansion_resumes": {
+      "relative_main_arc_station_mm": 151.92366412213738,
+      "corresponding_outer_arc_station_mm": 165.85,
+      "raw_right_margin_offset_mm": -81.0,
+      "broadened_right_margin_offset_mm": -94.0,
+      "final_left_offset_mm": 26.0,
+      "final_right_offset_mm": -94.0,
+      "final_width_mm": 120.0
+    },
+    "broadening_finish": {
+      "relative_main_arc_station_mm": 177.92366412213738,
+      "corresponding_outer_arc_station_mm": 194.23333333333332,
+      "raw_right_margin_offset_mm": -81.0,
+      "broadened_right_margin_offset_mm": -81.0,
+      "final_left_offset_mm": 32.5,
+      "final_right_offset_mm": -87.5,
+      "final_width_mm": 120.0
+    }
+  },
+  "straight_end_cap_examples": [
+    {
+      "connection": "Independent",
+      "reference_length_mm": 600.0,
+      "start_tangent_shift_mm": -10.0,
+      "finish_tangent_shift_mm": 10.0,
+      "start_cap_station_coordinate_mm": -10.0,
+      "finish_cap_station_coordinate_mm": 610.0
+    },
+    {
+      "connection": "Curve entrance",
+      "reference_length_mm": 600.0,
+      "start_tangent_shift_mm": -10.0,
+      "finish_tangent_shift_mm": 0.0,
+      "start_cap_station_coordinate_mm": -10.0,
+      "finish_cap_station_coordinate_mm": 600.0
+    },
+    {
+      "connection": "Curve exit",
+      "reference_length_mm": 600.0,
+      "start_tangent_shift_mm": 0.0,
+      "finish_tangent_shift_mm": 10.0,
+      "start_cap_station_coordinate_mm": 0.0,
+      "finish_cap_station_coordinate_mm": 610.0
+    }
+  ],
+  "evidence_limits": [
+    "Teaching dimensions do not establish physical clearance, structural suitability or manufacturing acceptance.",
+    "The circles and boundary envelope are continuous idealisations; the workbench projects sampled edges onto sampled main-reference stations.",
+    "No absolute host station, actual board outline, native area or volume is claimed.",
+    "The mid-platform section uses the ideal constant-circle gap and full platform width; the plateau is unchanged by broadening in this illustration.",
+    "The host adds margin, broadens each envelope, then enforces minimum width. Both final edges can move during the last step.",
+    "The unrolled profile is not a global XY plot and is not the board's native cutting outline.",
+    "The straight cap examples assume a 600 mm reference alignment and illustrate signed shifts, not shared widths or a fused joint.",
+    "No workbench module, project validator, macro or FreeCAD process ran."
+  ],
+  "illustration_check_absolute_tolerance_mm": 1e-10
+}

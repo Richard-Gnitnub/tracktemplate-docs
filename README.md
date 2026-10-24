@@ -47,7 +47,8 @@ The [authoring guide](docs/authoring.md), [terminology guide](docs/terminology.m
 [generation walkthrough](docs/handbook/generate-template-set.md),
 [curves and spacing chapter](docs/handbook/curves-and-spacing.md),
 [straight-route chapter](docs/handbook/straight-routes.md),
-[physical-platform chapter](docs/handbook/platforms.md), and
+[physical-platform chapter](docs/handbook/platforms.md),
+[formation-board chapter](docs/handbook/formation-board.md), and
 [transition-edit walkthrough](docs/handbook/transition-edit.md) use workbench
 revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
@@ -76,8 +77,8 @@ deliberately when updating dependencies, then rebuild before proposing the chang
 `_build/`. The build uses Sphinx, MyST Markdown and the PyData theme; it does
 not import TrackTemplate or require FreeCAD.
 
-The curve, straight and platform chapters' explanatory SVG figures and numerical
-JSON are committed assets.
+The curve, straight, platform and formation chapters' explanatory SVG figures
+and numerical JSON are committed assets.
 [Optional figure-regeneration instructions](docs/development.md#regenerate-the-alignment-figures)
 use a separate Python environment with Matplotlib 3.10.8. Sphinx consumes the
 assets directly and needs no additional dependency. The figure tools perform
