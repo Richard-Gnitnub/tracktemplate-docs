@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" role="img" aria-labelledby="title desc">
+<title id="title">Turnout, crossover and restored turnout identity lifecycle</title>
+<desc id="desc">Three vertically connected states: standalone TO-001 on Host A; managed XO-001 with constituent Host A identity TO-001, Host B identity XO-001-B001 and a complete original turnout configuration snapshot; rebuilt standalone TO-001 when conversion back succeeds and its identity is still free. Original FreeCAD group objects are replaced at each conversion.</desc>
+<rect x="0" y="0" width="920" height="680" fill="#fff"/>
+<style>
+text{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;fill:#142c43}
+.title{font-size:23px;font-weight:700}
+.subtitle{font-size:15px;fill:#405971}
+.state{font-size:22px;font-weight:700}
+.body{font-size:16.5px}
+.meta{font-size:15px;fill:#38546b}
+.arrow{font-size:15px;font-weight:600;fill:#53657d}
+</style>
+<text class="title" x="44" y="43">Stable railway identity is not the same as a retained FreeCAD object</text>
+<text class="subtitle" x="44" y="67">Illustrative identifiers: the first standalone turnout and first managed crossover</text>
+<rect x="44" y="95" rx="13" width="832" height="139" fill="#eef6fb" stroke="#6b99b7" stroke-width="2"/>
+<text class="state" x="67" y="128">1. Standalone turnout · TO-001</text>
+<text class="body" x="67" y="158">Host A source centreline and independent turnout group</text>
+<text class="body" x="67" y="185">Optional timber identities, length labels and datums enabled</text>
+<text class="meta" x="67" y="211">Production catalogue: standalone turnout cutting, solid and engraving sources</text>
+<line x1="460" y1="235" x2="460" y2="275" stroke="#59778c" stroke-width="3"/>
+<path d="M451 264 L460 278 L469 264" fill="none" stroke="#59778c" stroke-width="3"/>
+<text class="arrow" x="480" y="262">Convert turnout to crossover</text>
+<rect x="44" y="281" rx="13" width="832" height="179" fill="#f5f1fc" stroke="#9785bf" stroke-width="2"/>
+<text class="state" x="67" y="315">2. Managed crossover · XO-001</text>
+<text class="body" x="67" y="346">Internal Host A identity: TO-001</text>
+<text class="body" x="67" y="372">Internal Host B identity: XO-001-B001</text>
+<text class="body" x="67" y="398">Original options retained in conversion_source_turnout_config</text>
+<text class="meta" x="67" y="427">New crossover group and records · old standalone group removed</text>
+<line x1="460" y1="461" x2="460" y2="502" stroke="#59778c" stroke-width="3"/>
+<path d="M451 492 L460 506 L469 492" fill="none" stroke="#59778c" stroke-width="3"/>
+<text class="arrow" x="480" y="491">Convert back, keeping Host A</text>
+<rect x="44" y="509" rx="13" width="832" height="121" fill="#edf8f1" stroke="#65a284" stroke-width="2"/>
+<text class="state" x="67" y="542">3. Rebuilt standalone turnout · TO-001, if free</text>
+<text class="body" x="67" y="574">New FreeCAD group and source objects; old crossover objects removed</text>
+<text class="meta" x="67" y="604">Original optional output choices used when the complete snapshot exists</text>
+<text class="meta" x="44" y="659">Source-based illustration only. Reverse uses the current crossover toe/orientation; original object names are not guaranteed.</text>
+</svg>

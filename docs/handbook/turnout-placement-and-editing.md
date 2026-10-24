@@ -384,7 +384,8 @@ complete no-change guarantee for *all* document objects. [Clear call][edit];
 The dialog's **Close** button asks whether to cancel an active edit; **Cancel
 edit** itself just drops the proposed configuration. FreeCAD's document
 transaction/Undo boundary is separate from those dialogue controls. Editing a
-standalone turnout is also different from converting it into a crossover,
+standalone turnout is also different from
+[converting it into a crossover](turnout-crossover-conversion.md),
 integrating it with host production or creating a non-production reference
 copy. [Close behaviour][remove-ui]; [integration][integration]
 
