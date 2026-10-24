@@ -9,7 +9,8 @@ The wiki owns the development journal. Keep chronology and personal accounts
 there.
 
 Read [DOCUMENTATION_INTENT.md](DOCUMENTATION_INTENT.md),
-[the authoring guide](docs/authoring.md), and the relevant row in
+[the authoring guide](docs/authoring.md),
+[Using TrackTemplate terminology](docs/terminology.md), and the relevant row in
 [GUI coverage](docs/gui-coverage.md) before substantial documentation work.
 This repository owns the handbook and its authoring workflow. The workbench
 repository keeps technical requirements, terminology, decisions and acceptance.
@@ -41,8 +42,13 @@ correction needs the relevant check and diff review.
   an observed binding.
 - Preserve exact code, UI labels, property names, diagnostics, commands,
   identifiers, units, signs, frames, tolerances and licence notices.
-- Use UK English and the workbench terminology register. Use **plain line** in
-  new prose. Keep established identifiers exact.
+- Before writing or reviewing technical prose, read the relevant entries in
+  the actual workbench `reference/TERMINOLOGY.md` at the recorded revision.
+  Follow the terminology guide's pinned links or a verified source checkout.
+  Check meaning, assurance state, preferred form and scope; candidate-bound
+  admissions do not apply globally. Record the source and checked entries in
+  the PR. Use UK English and **plain line** for the accepted railway category.
+  Keep established identifiers and quoted GUI labels exact.
 - Link live project status to its owner. Do not copy phase counts or acceptance
   registers into the handbook. Report a conflict between sources before fixing
   the affected explanation; do not change an upstream requirement to match code.

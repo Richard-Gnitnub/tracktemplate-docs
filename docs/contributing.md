@@ -37,7 +37,9 @@ exact.
 For new developer chapters, follow [Authoring the handbook](authoring.md).
 Use [GUI coverage](gui-coverage.md) to select a workflow, then explain its
 purpose, inputs, real code path, results and failure behaviour. The repository
-skills provide authoring, STE100 assistance, independent review and alignment.
+skills provide authoring, STE100 assistance, independent review and documentation
+alignment. Follow [Using TrackTemplate terminology](terminology.md) and record
+the upstream entries you checked in the pull request's terminology field.
 The [transition-edit chapter](handbook/transition-edit.md) shows this approach.
 
 If a proposed edit changes a technical requirement, first identify its owner

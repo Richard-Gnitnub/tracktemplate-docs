@@ -15,6 +15,8 @@ Adapted for tracktemplate-docs on 2026-10-24. See ../../../NOTICE.md.
 Read [AGENTS.md](../../../AGENTS.md), the
 [authoring guide](../../../docs/authoring.md), the existing affected page, and
 the relevant [GUI coverage](../../../docs/gui-coverage.md) row.
+Apply [Using TrackTemplate terminology](../../../docs/terminology.md): read
+the applicable upstream entries before drafting and record their source revision.
 Choose a new page, a material revision, a small correction, or no change.
 Keep the change tied to the user's reader need.
 
@@ -56,9 +58,15 @@ and live acceptance with their workbench owners.
 
 ## Apply controlled writing
 
-Use UK English and the upstream terminology register. Preserve exact code,
-UI labels, diagnostics, properties, constants and units. Use **plain line** in
-new prose. Avoid arbitrary shortening that removes controlled meaning.
+Use UK English and the upstream terminology register. Check each new or
+materially changed technical term against its meaning, preferred form,
+assurance state and context. A candidate-bound admission does not grant general
+approval. Record the entries actually read and any unresolved meaning in the
+PR's terminology field; leave terminology decisions with the workbench owner.
+
+Preserve exact code, UI labels, diagnostics, properties, constants and units.
+Use **plain line** for the accepted railway category in new prose. Avoid
+arbitrary shortening that removes controlled meaning.
 
 Use [$tracktemplate-docs-ste100](../tracktemplate-docs-ste100/SKILL.md) within
 authoring when consulting the standard. For formal conformance, require the

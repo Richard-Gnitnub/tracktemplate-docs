@@ -20,10 +20,14 @@ narration, worked values, failure behaviour and source links. Explain recorded
 design intent and identify reasoning inferred from the implementation. Keep the
 wiki as the development journal.
 
-Adapt the relevant TrackTemplate technical-authoring, STE100, review and
-alignment skills for this handbook. Preserve technical meaning and exact
-identifiers. Keep the source requirements and acceptance with their workbench
-owners. Use the existing free publishing and build tools.
+Adapt the relevant TrackTemplate skills for this handbook: technical
+authoring, STE100, review and documentation alignment. Preserve technical
+meaning and exact identifiers. Keep the source requirements and acceptance
+with their workbench owners. Use the existing free publishing and build tools.
+
+Use the workbench's `reference/TERMINOLOGY.md` as the canonical terminology
+register. Authors and reviewers must read its relevant entries, preserve their
+meaning and scope, and record the source and checked terms in the PR.
 
 Starting stack: Sphinx 9.2.0, PyData Sphinx Theme 0.23.0 and MyST-Parser 5.1.0, with a separate Python 3.13 documentation environment. Read the Docs provides hosting. Keep reStructuredText support alongside Markdown.
 
@@ -46,8 +50,9 @@ Begin with six areas:
 6. A reviewer can inspect the generated site before publication.
 7. Original notices remain with reused scaffold material; imported build output and caches do not become maintained source.
 8. A source-pinned coverage map identifies GUI workflow families and the depth of documentation available for each.
-9. Repository agents use a shared authoring profile and reusable skills for narrated explanations, terminology, one independent review and alignment.
+9. Repository agents use a shared authoring profile and reusable skills for narrated explanations, terminology, one independent review and documentation alignment.
 10. Formal STE100 claims name their official-source review and scope. Build and style checks alone do not establish conformance.
+11. Technical prose uses the upstream terminology register with its assurance states and contextual limits. The handbook explains how to apply it and does not create a second terminology authority.
 
 ## Scope and related work
 

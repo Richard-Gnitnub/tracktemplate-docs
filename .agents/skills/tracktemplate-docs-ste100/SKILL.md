@@ -29,9 +29,13 @@ Do not claim certification, endorsement or conformity from this skill's use.
 4. Keep code and other exact content separate from the surrounding prose.
    Record relevant exclusions without using them to exempt ordinary explanation.
 
-For handbook guidance, use the project profile and the relevant upstream
-terminology. Explain an unfamiliar technical term when the reader needs it.
-Do not create a second canonical term register or approve a disputed meaning.
+For handbook guidance, use the project profile and
+[Using TrackTemplate terminology](../../../docs/terminology.md). Read the
+relevant upstream entries at the recorded revision. Check meaning, preferred
+form, assurance state and context; candidate-bound admissions are not global.
+Record the entries consulted and any source gap in the PR's terminology field.
+Explain an unfamiliar technical term when the reader needs it. Do not create
+a second canonical term register or approve a disputed meaning.
 
 ## Preserve technical meaning
 

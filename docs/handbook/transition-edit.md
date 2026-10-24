@@ -11,9 +11,9 @@ those changes and explains how the implementation protects the selected entity.
 
 **Source:** workbench revision
 [`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
-This chapter covers the bounded canonical Entry/Exit transition editor. It is a
-separate, explicitly activated development route. The retained main workflow
-has its own dialogue and generation path.
+This chapter covers the bounded canonical Entry/Exit editor for Euler
+(clothoid) transitions. It is a separate, explicitly activated development
+route. The retained main workflow has its own dialogue and generation path.
 
 ## Purpose and design intent
 

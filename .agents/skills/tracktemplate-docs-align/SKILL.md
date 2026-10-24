@@ -16,6 +16,8 @@ Read [AGENTS.md](../../../AGENTS.md), the
 [authoring guide](../../../docs/authoring.md), the affected pages and relevant
 [GUI coverage](../../../docs/gui-coverage.md) rows. Identify the triggering
 change, previous documented revision and proposed source revision.
+Follow [Using TrackTemplate terminology](../../../docs/terminology.md) when
+the affected claims contain railway or project technical terms.
 
 Keep the audit targeted unless the user asks for a complete review or concrete
 evidence shows wider drift. Preserve unrelated work and historical evidence.
@@ -34,7 +36,12 @@ Keep the workbench's technical requirements and acceptance with their owners.
 5. Check whether a former limit remains, a new route exists or a documented
    function moved. Read current code and current status owners; a historical
    extraction contract cannot establish today's whole capability inventory.
-6. Check the recorded STE100 assessment scope. Do not carry a previous formal
+6. Read the affected terminology entries at the old and proposed revisions.
+   Compare meanings, preferred forms, assurance states and scope. Preserve
+   exact source labels and historical identifiers. Candidate-bound admissions
+   do not transfer automatically. Record the checked entries and unresolved
+   meanings in the PR; leave terminology decisions with the workbench owner.
+7. Check the recorded STE100 assessment scope. Do not carry a previous formal
    result onto materially changed prose without sufficient new review.
 
 Classify a material finding as `VERIFIED`, `STALE`, `CONTRADICTORY`,
