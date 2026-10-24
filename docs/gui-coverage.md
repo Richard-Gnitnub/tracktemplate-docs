@@ -10,7 +10,8 @@ The inventory covers workbench revision
 Labels, callbacks and composition were inspected in source; the GUI was not
 executed for this inventory. **Not yet written** means that the intended
 explanation has no handbook chapter. It does not mean the operation is absent
-from the code. The linked transition chapter is a bounded first walkthrough.
+from the code. The linked chapters cover main generation, curve and spacing
+calculations, and the separate transition editor within their stated limits.
 
 ## Read the current interface correctly
 
@@ -29,10 +30,10 @@ geometry action to **Build 3D chairs for export**. The
 
 ## Alignments and generated template sets
 
-| Workflow and visible control | Current entry point and explanation to write | Coverage |
+| Workflow and visible control | Current entry point and explanation | Coverage |
 | --- | --- | --- |
-| Generate or replace a set: **Output behaviour:** | `CurveInputDialog.values` and host `run_macro`: remembered inputs, preparation, generated identities, replacement, transaction, recompute and visible results. Explain what survives a validation failure. [Source][generation] | Not yet written |
-| **Main curve** and **Independent parallel-track controls** | Track add/remove/duplicate handlers, then `main_circle_centre`, `build_concentric_core` and `prepare_track_alignment`: Euler easing, circular arcs, signed turn, spacing modes, handedness, strip and centreline output. [UI][main-ui]; [calculations][alignment] | Not yet written |
+| Generate or replace a set: **Output behaviour:** | `CurveInputDialog.values` and host `run_macro`: remembered inputs, preparation, generated identities, replacement, transaction, recompute, visible results and failure limits. [Source][generation] | [Detailed generation walkthrough](handbook/generate-template-set.md). Optional feature calculations and export publication remain separate. |
+| **Main curve** and **Independent parallel-track controls** | Track add/remove/duplicate handlers, then `main_circle_centre`, `build_concentric_core` and `prepare_track_alignment`: Euler easing, circular arcs, signed turn, spacing modes, handedness, strip and centreline output. [UI][main-ui]; [calculations][alignment] | [Detailed calculation walkthrough](handbook/curves-and-spacing.md): the three modes, controls, frame, sampling and generated geometry. |
 | **Straight Track Manager** | `_add_straight`, `_add_curve_connection_pair`, `build_straight_route` and connected-route validation: independent datums, parallel tracks, tangent inheritance and disabled fields. The entrance/exit-pair action replaces all straight rows with two 600 mm routes. [Source][straights] | Not yet written |
 | **Platforms** | Platform add/duplicate/remove/reorder handlers and `calculate_platform_boundaries`: host references, edge clearance, coverage, length, taper/ramp and edge/face/solid outputs. Separate physical platforms from track **Platform widening**. [Source][platforms] | Not yet written |
 | **Formation board** | `create_formation_geometry_multi`: occupied footprints, margin, width, outline/solid and engraving; explain how the board relates to tracks and platforms. [Controls][formation-ui]; [calculation][formation] | Not yet written |

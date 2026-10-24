@@ -43,9 +43,13 @@ examined on 24 October 2026. The separately labelled
 owns current project status.
 
 The [authoring guide](docs/authoring.md), [terminology guide](docs/terminology.md),
-[GUI coverage map](docs/gui-coverage.md) and
+[GUI coverage map](docs/gui-coverage.md),
+[generation walkthrough](docs/handbook/generate-template-set.md),
+[curves and spacing chapter](docs/handbook/curves-and-spacing.md), and
 [transition-edit walkthrough](docs/handbook/transition-edit.md) use workbench
-revision `7965bfc4671668f889c1f43fb8336c5146c3f5cf`. The coverage map records
+revision
+[`7965bfc4671668f889c1f43fb8336c5146c3f5cf`](https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf).
+The coverage map records
 which developer explanations still need writing. The terminology guide requires
 authors and reviewers to read the relevant workbench register entries and record
 their source revision, meaning and scope in the PR.
@@ -67,11 +71,18 @@ deliberately when updating dependencies, then rebuild before proposing the chang
 `_build/`. The build uses Sphinx, MyST Markdown and the PyData theme; it does
 not import TrackTemplate or require FreeCAD.
 
+The curve chapter's explanatory SVG figures and numerical JSON are committed
+assets. [Optional figure-regeneration instructions](docs/development.md#regenerate-the-alignment-figures)
+use a separate Python environment with Matplotlib 3.10.8. Sphinx consumes the
+assets directly and needs no additional dependency. The figure tool performs
+independent mathematical calculations; it does not import or execute workbench
+code.
+
 ## Scaffold origins
 
 The Makefile adapts the earlier Companion/Railworks Sphinx scaffold.
 [NOTICE.md](NOTICE.md) records the source revisions and scope.
 [LICENSE](LICENSE) preserves the original MIT notice.
-Adapted TrackTemplate skills, the terminology guide and the source-based
-transition-edit chapter retain GPL-3.0-or-later.
+Adapted TrackTemplate skills, the terminology guide, the source-based handbook
+chapters and the explanatory figure tool and assets retain GPL-3.0-or-later.
 [NOTICE.md](NOTICE.md) identifies the covered paths and sources.
