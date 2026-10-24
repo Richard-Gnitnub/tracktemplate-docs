@@ -1,0 +1,49 @@
+name: Documentation bug report
+description: Report incorrect content, broken links or examples, or a problem with the docs site or build.
+title: "[Docs bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for problems in TrackTemplate's developer documentation,
+        including content, links, examples, navigation, accessibility and documentation builds.
+
+        Check [existing documentation issues](https://github.com/Richard-Gnitnub/tracktemplate-docs/issues) for related reports.
+        Report problems with the workbench itself in [tracktemplate](https://github.com/Richard-Gnitnub/tracktemplate/issues).
+  - type: textarea
+    id: location
+    attributes:
+      label: Affected page or source
+      description: Paste the documentation URL, source path or build link, and name the section if relevant. For a wider problem, say that it affects the whole site or documentation build.
+      placeholder: "docs/development.md, in the local build instructions"
+    validations:
+      required: true
+  - type: input
+    id: docs-version
+    attributes:
+      label: Documentation version or revision
+      description: If known, include the Read the Docs version, pull-request preview number, Git commit or local branch. Leave blank if unsure.
+      placeholder: "latest, PR preview #12, or a commit SHA"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Describe the incorrect, unclear, missing or broken documentation and the task it affects. Quote the relevant text or command if useful.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected result
+      description: Explain what you expected to read, find or do. You do not need to provide a fix.
+    validations:
+      required: true
+  - type: textarea
+    id: supporting-context
+    attributes:
+      label: Supporting details
+      description: Add relevant reproduction steps, screenshots, log excerpts or source links. For site or build problems, include the browser, device or Python/Sphinx versions only where they help reproduce the issue.
+    validations:
+      required: false

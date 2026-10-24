@@ -1,0 +1,48 @@
+name: Documentation feature proposal
+description: Propose a developer guide, example, reference improvement or feature for the documentation site.
+title: "[Docs proposal]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose an improvement to TrackTemplate's developer documentation,
+        its navigation, accessibility or documentation tooling.
+
+        Check [existing documentation issues](https://github.com/Richard-Gnitnub/tracktemplate-docs/issues) for related proposals.
+        Propose features for the workbench itself in [tracktemplate](https://github.com/Richard-Gnitnub/tracktemplate/issues).
+  - type: textarea
+    id: reader-need
+    attributes:
+      label: Reader need
+      description: Who would use this documentation, and what task or question is difficult to complete with the current material?
+      placeholder: "A new contributor needs to understand how to build and review a documentation change."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed improvement
+      description: Describe the content or documentation feature you would add or change. An outline, worked example or sketch is welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Affected pages or proposed location
+      description: Link existing pages or source paths. For new content, suggest a section or write "new page". Include the documentation version or revision if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: What would a successful change let the reader do?
+      description: If you can, describe the outcomes that would show the improvement is useful. These can guide review of the documentation change.
+    validations:
+      required: false
+  - type: textarea
+    id: supporting-context
+    attributes:
+      label: References and alternatives
+      description: Add relevant source documents, code, examples, related issues or alternative approaches. If the proposal affects a technical requirement, link the source that owns it.
+    validations:
+      required: false

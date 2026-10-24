@@ -12,6 +12,22 @@ and the declarations needed for railway data and other evidence.
 When changing the workbench, follow these files at the revision you are
 actually changing. The links here provide the documented reading baseline.
 
+## Report a documentation issue
+
+Search the [documentation issues](https://github.com/Richard-Gnitnub/tracktemplate-docs/issues)
+for an existing report, then [open an issue](https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/new/choose)
+with the relevant form:
+
+- **Documentation bug report** covers incorrect or unclear content, broken
+  links or examples, and problems with the site or documentation build. Include
+  the affected page or source, the problem and the expected result.
+- **Documentation feature proposal** covers new developer guides, examples,
+  reference material, navigation and documentation tooling. Describe the reader
+  need, the proposed improvement and where it belongs.
+
+Use the [workbench issue tracker](https://github.com/Richard-Gnitnub/tracktemplate/issues)
+for workbench behaviour or product features.
+
 ## Changes to this documentation
 
 Use a page for one reader task. Give the reader a short explanation and a
