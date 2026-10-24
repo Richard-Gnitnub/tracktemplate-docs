@@ -2,7 +2,7 @@
 
 Establish TrackTemplate's developer documentation from the existing Sphinx Companion project. Start with a small, working site for contributors. User documentation follows later, when the product can support it.
 
-This records the owner's documentation intent from 24 October 2026. The initial implementation uses the stack below, with Read the Docs hosting to follow review of the draft pull request.
+This records the owner's documentation intent from 24 October 2026. The initial implementation uses the stack below and is published through Read the Docs.
 
 ## Problem or opportunity
 
@@ -14,7 +14,7 @@ The reusable source is [Railworks-Documentation at 0129517](https://github.com/R
 
 Create a separate `tracktemplate-docs` repository derived from that source, preserving its history and attribution. Use it for site configuration, navigation and contributor explanations. Keep technical requirements, project status, decisions and evidence in their existing owners in `tracktemplate`.
 
-Starting stack: Sphinx 9.2.0, PyData Sphinx Theme 0.23.0 and MyST-Parser 5.1.0, with a separate Python 3.13 documentation environment. Use Read the Docs for hosting and pull-request previews once the service connection exists. Keep reStructuredText support alongside Markdown.
+Starting stack: Sphinx 9.2.0, PyData Sphinx Theme 0.23.0 and MyST-Parser 5.1.0, with a separate Python 3.13 documentation environment. Read the Docs provides hosting. Keep reStructuredText support alongside Markdown.
 
 Begin with six areas:
 
@@ -41,7 +41,7 @@ The initial work establishes the developer publication structure and a small set
 
 User guidance remains the later work in [tracktemplate#179](https://github.com/Richard-Gnitnub/tracktemplate/issues/179), scheduled after Phase 11. The consolidation in [tracktemplate#180](https://github.com/Richard-Gnitnub/tracktemplate/issues/180) remains separate. This initiative adds no new phase exit, decision register or evidence store and does not establish product or output acceptance.
 
-The public [tracktemplate-docs repository](https://github.com/Richard-Gnitnub/tracktemplate-docs) has been created through GitHub's importer to preserve the Companion/Railworks Git history. The developer starter is proposed in a draft pull request. Read the Docs hosting and previews remain pending.
+The public [tracktemplate-docs repository](https://github.com/Richard-Gnitnub/tracktemplate-docs) preserves the imported Companion/Railworks Git history. The initial developer documentation has merged. Read the Docs publishes [the developer site](https://tracktemplate-docs.readthedocs.io/en/latest/).
 
 ## References
 

@@ -7,11 +7,10 @@ contribution routes, validation and reference links. The workbench repository
 keeps its existing technical authority. User guidance remains later work under
 [issue #179](https://github.com/Richard-Gnitnub/tracktemplate/issues/179).
 
-The initial developer documentation is proposed for review in
-[tracktemplate-docs](https://github.com/Richard-Gnitnub/tracktemplate-docs).
-GitHub Actions validates the HTML and retains a build artifact. Read the Docs
-hosting is not yet connected. The configuration is ready for that service
-connection; its presence does not publish the site.
+[Read the developer documentation](https://tracktemplate-docs.readthedocs.io/en/latest/).
+
+Read the Docs publishes the developer site from this repository.
+GitHub Actions also validates the HTML and retains a build artifact.
 
 ## Build locally
 

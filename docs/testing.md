@@ -17,8 +17,11 @@ Inspect the changed pages in the browser. Check navigation, headings, code
 blocks and tables at desktop and narrow-screen widths. Confirm that each
 source link points to the intended file and revision.
 
-The supplied GitHub Actions workflow runs the strict HTML build and retains
-the result as an artifact for review. It does not publish a website.
+GitHub Actions runs the strict HTML build and retains the result as an
+artifact for review. Read the Docs builds the hosted site.
+
+For a pull request, open the Read the Docs check's Details link and inspect
+the generated preview before merging.
 
 ## Workbench evidence
 
