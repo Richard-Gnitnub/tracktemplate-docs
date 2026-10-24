@@ -19,6 +19,12 @@ owns current project status.
 
 ## Find your starting point
 
+Browse **Development**, **Code walkthroughs**, **Writing the handbook** and
+**Reference** in the left navigation. On a narrow screen, open the hamburger
+menu to see the same tree. Use a section's arrow to show or hide its pages;
+select its title to open the section overview. The current section opens
+automatically. The table below also links directly to individual pages.
+
 | Your task | Start here |
 | --- | --- |
 | Build or edit this documentation | [Development environment](development.md) |
@@ -48,20 +54,8 @@ documentation is separate later work tracked in
 :hidden:
 :maxdepth: 2
 
-development
-architecture
-handbook/generate-template-set
-handbook/curves-and-spacing
-handbook/straight-routes
-handbook/platforms
-handbook/formation-board
-handbook/sectioning
-handbook/transition-edit
-gui-coverage
-authoring
-agent-context
-terminology
-contributing
-testing
-reference
+Development <developer-guide>
+Code walkthroughs <handbook/index>
+Writing the handbook <writing-guide>
+Reference <reference>
 ```

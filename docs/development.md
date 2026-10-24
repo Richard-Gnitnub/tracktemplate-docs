@@ -25,9 +25,21 @@ The direct dependencies are listed in `requirements.txt`. The lock file records
 the complete dependency set used for the checked Python 3.13 build.
 
 Edit the Markdown pages in `docs/`. MyST supplies Sphinx directives within
-Markdown, including the navigation tree on the home page. The theme settings
-live in `docs/conf.py`; the small colour adjustments live in
+Markdown, including the `toctree` directives that organise the navigation.
+`docs/index.md` lists the main sections. Their overview pages,
+`docs/developer-guide.md`, `docs/handbook/index.md` and `docs/writing-guide.md`,
+list the pages within each section. Add each page to one tree; use ordinary
+links for references from other sections. An explicit toctree label can keep
+the menu short while the chapter keeps its full title and existing URL.
+
+The theme settings live in `docs/conf.py`; the small colour adjustments live in
 `docs/_static/custom.css`.
+`docs/_templates/site-nav.html` asks PyData to show the tree from its root on
+every page, including search results. This supplies the same hierarchy to the
+mobile menu and desktop sidebar. The theme provides the expand controls,
+current-page highlight and responsive drawer. The separate header page list
+is disabled to avoid repeating the links in the mobile menu. Check these
+behaviours when changing navigation or upgrading the theme.
 
 ## Regenerate the alignment figures
 
