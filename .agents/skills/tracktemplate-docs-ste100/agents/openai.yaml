@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrackTemplate handbook STE100 helper"
+  short_description: "Apply handbook language rules and verify STE100 scope"
+  default_prompt: "Use $tracktemplate-docs-ste100 to support the author or sole reviewer with precise UK English and evidence for any formal STE100 claim."

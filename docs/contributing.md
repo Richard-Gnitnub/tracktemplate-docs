@@ -34,6 +34,12 @@ Use a page for one reader task. Give the reader a short explanation and a
 direct link to the relevant source. Keep technical names, paths and commands
 exact.
 
+For new developer chapters, follow [Authoring the handbook](authoring.md).
+Use [GUI coverage](gui-coverage.md) to select a workflow, then explain its
+purpose, inputs, real code path, results and failure behaviour. The repository
+skills provide authoring, STE100 assistance, independent review and alignment.
+The [transition-edit chapter](handbook/transition-edit.md) shows this approach.
+
 If a proposed edit changes a technical requirement, first identify its owner
 in [Reference](reference.md). The
 [Technical Documentation Profile](https://github.com/Richard-Gnitnub/tracktemplate/blob/54c5903b41e89d1fdfb430c812495e36b91d690b/reference/ENGINEERING_POLICY.md#tt-doc-001-tracktemplate-technical-documentation-profile)
@@ -48,10 +54,11 @@ After a site edit, run the strict HTML build in
 [Development environment](development.md) and inspect the changed page.
 The [testing page](testing.md) explains what that check establishes.
 
-## Scope of the first site
+## Scope of the handbook
 
-The first site helps developers navigate the project and its existing
-engineering sources. Later modeller guidance is tracked in
+The handbook helps developers understand GUI operations, railway calculations,
+state changes and design intent. It also links the existing engineering
+sources. Later modeller guidance is tracked in
 [issue #179](https://github.com/Richard-Gnitnub/tracktemplate/issues/179).
 The broader consolidation of decisions and evidence is tracked separately in
 [issue #180](https://github.com/Richard-Gnitnub/tracktemplate/issues/180).

@@ -25,7 +25,7 @@ html_theme_options = {
     "show_prev_next": True,
     "show_nav_level": 2,
     "navigation_depth": 2,
-    "header_links_before_dropdown": 6,
+    "header_links_before_dropdown": 2,
     "icon_links": [
         {
             "name": "TrackTemplate source",

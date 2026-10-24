@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrackTemplate handbook review"
+  short_description: "Review handbook accuracy, examples and source authority"
+  default_prompt: "Use $tracktemplate-docs-review to review this frozen TrackTemplate handbook change and return one complete correction set."

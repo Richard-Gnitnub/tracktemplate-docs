@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrackTemplate docs alignment"
+  short_description: "Reconcile handbook claims with source and GUI changes"
+  default_prompt: "Use $tracktemplate-docs-align to check the affected handbook pages against a changed TrackTemplate source revision."
