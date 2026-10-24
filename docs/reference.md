@@ -2,7 +2,7 @@
 
 ## Source basis
 
-The technical links on this draft site use TrackTemplate revision
+The technical links on this site use TrackTemplate revision
 [`54c5903b41e89d1fdfb430c812495e36b91d690b`](https://github.com/Richard-Gnitnub/tracktemplate/tree/54c5903b41e89d1fdfb430c812495e36b91d690b),
 examined on 24 October 2026. This makes the initial reading path reproducible.
 

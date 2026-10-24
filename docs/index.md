@@ -7,8 +7,7 @@ templates inside FreeCAD. Its [product vision](https://github.com/Richard-Gnitnu
 explains the intended Workbench and the current migration programme.
 
 ```{note}
-This is a draft documentation scaffold. Technical links use the source
-snapshot `54c5903b`, examined on 24 October 2026.
+Technical links use the source snapshot `54c5903b`, examined on 24 October 2026.
 The [live project plan](https://github.com/Richard-Gnitnub/tracktemplate/blob/main/reference/PROJECT_PLAN.md)
 owns current project status.
 ```
