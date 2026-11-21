@@ -18,7 +18,7 @@ TrackTemplate provides two related GUI actions:
   configuration to support a later reversal.
 - **Convert selected crossover to turnout** chooses one constituent turnout,
   reconstructs its geometry and replaces the crossover with a standalone
-  entity. It does not retain both branches.
+  entity. The other constituent turnout and the connecting road are removed.
 
 The design intent stated in the manager is **transactional replacement with
 reversible identity and source data**, subject to the geometry actually
@@ -32,9 +32,10 @@ references as the original turnout's exact output choices.
 `7965bfc4671668f889c1f43fb8336c5146c3f5cf`][revision]. The active
 conversion handlers, geometry builders and document transactions are in the
 retained B15 macro. B16's [crossover preflight adapter][preflight] guards the
-underlying solver/build route used during turnout extension. These are
-current internal GUI workflows, **not** promises of a stable Python API or
-a finished public FreeCAD Addon. Read the separate
+underlying solver/build route used during turnout extension. The following
+walkthrough describes these internal GUI workflows at the pinned revision.
+It does not establish runtime admission on a later checkout, a stable Python
+API or a finished public FreeCAD Addon. Read the separate
 [C10 turnout chapter](turnout-placement-and-editing.md) and
 [crossover solver chapter](crossover-geometry.md) first.
 
@@ -45,7 +46,8 @@ set in the FreeCAD document. Use **Turnouts** for forward conversion and
 **Crossovers** for reversal. The specialist buttons are normally hidden until
 **Show specialist and maintenance controls** is selected. The guided
 workflow can also offer conversion as an optional final action; it delegates
-to the same handlers. [GUI bindings][gui-bindings]
+to the same handlers. [Turnout visibility and guided action][forward-controls];
+[crossover visibility and guided action][reverse-controls]
 
 | Action | Eligible state and effect |
 | --- | --- |
@@ -58,7 +60,8 @@ The forward button calls
 `TurnoutManagerDialog.begin_selected_turnout_extension`. The reverse
 button calls `CrossoverManagerPanel.convert_crossover_to_turnout`.
 These are the actual connected handlers, not names inferred from
-the button captions. [Connected GUI callbacks][gui-bindings]
+the button captions. [Forward button binding][forward-binding];
+[reverse button binding][gui-bindings]
 
 ### What the forward preview tells the reader
 
@@ -309,12 +312,17 @@ reconstruction. [Identity selection][reverse-identity]
 
 ## Worked round trip: which fields and records survive?
 
-Consider an **illustrative** `SET-001` example derived from the fixed
-curved-host geometry used in the
-[crossover preflight witness](crossover-geometry.md#work-through-the-two-curved-host-witnesses).
-The solver's documented valid Host A toe is **746.298 mm** and it
-calculates Host B toe **1,590.068084 mm**. Start with standalone `TO-001`
-on Host A, facing, left-hand, 16.5 mm gauge and 1.0 mm flangeway.
+Consider an **illustrative** `SET-001` example using the fixed curved-host
+[crossover preflight witness](crossover-geometry.md#work-through-the-two-curved-host-witnesses)
+as its geometry reference. That retained witness gives Host A toe
+**746.298 mm** and solved Host B toe **1,590.068084 mm**. Each toe value
+measures distance along its own host centreline from that host's station-zero
+origin, increasing in its travel direction.
+
+For the identity walkthrough, assume a standalone `TO-001` on Host A at
+that toe, facing, with the saved hand compatible with Host B, 16.5 mm
+gauge and 1.0 mm flangeway. The witness selected **Automatic handing**;
+the conversion route instead retains the source turnout's saved hand.
 
 For this example, enable *timber outlines*, *engraved timber identities*,
 *engraved rounded timber lengths* and *construction datums* on the
@@ -409,7 +417,7 @@ turnout records. [Record restoration][reverse-commit]
 | No turnout selected, missing source object or integrated source turnout | Forward conversion is unavailable or raises a specific diagnostic. Restore the recognised source objects or remove turnout integration first. |
 | No suitable neighbour or failed geometry on every candidate | Resolver returns an error with candidate failures. No forward conversion transaction is started. Check track identity, separation and the [complete radius decision](crossover-geometry.md). |
 | User declines either confirmation | No conversion is committed. The generated in-memory candidate is discarded as a proposed result. |
-| Source turnout was altered after forward preview | The B16 [signature-bound preflight](crossover-geometry.md#why-the-preview-has-an-input-signature) must match current hosts, request and occupancy before the crossover builder can reuse `pre_solved`; a stale cached result is rejected. |
+| Host geometry, placement inputs or trackwork occupancy changed after forward preview | The B16 [signature-bound preflight](crossover-geometry.md#why-the-preview-has-an-input-signature) must match current hosts, request and occupancy before the crossover builder can reuse `pre_solved`; a stale cached result is rejected. Optional output flags are not themselves part of that signature. |
 | Crossover lacks a saved complete source snapshot | Reverse falls back to the internal selected-side configuration and displays that source. Original option values not recorded in the old crossover cannot be inferred. |
 | Original turnout ID is now in use | Reverse raises the ID-collision error instead of overwriting that turnout. Investigate the conflicting entity before retrying. |
 | Required crossover objects or selected host are missing | Reverse resolution rejects the attempt. A missing integration-recovery record also blocks an integrated reversal. |
@@ -463,6 +471,9 @@ conformance has not been verified.**
 
 [revision]: https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf
 [gui-bindings]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L37988-L38020
+[forward-binding]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L39847-L39905
+[forward-controls]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L39920-L40036
+[reverse-controls]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L38060-L38165
 [forward-ui]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L40558-L40679
 [reverse-ui]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L39532-L39659
 [forward-resolve]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L29009-L29149
