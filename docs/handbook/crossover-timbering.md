@@ -674,8 +674,9 @@ for their exact scope. [Historical defects][characterisation];
 For this chapter, the implementation and evidence were inspected at the
 pinned revision and the independent rectangle arithmetic was checked.
 No FreeCAD operation, workbench validation or manufacturing trial was
-run. [Host integration][integration-issue] and [chair analysis][chair-issue]
-remain separate workflows; live requirements and acceptance remain with
+run. [Chair-position analysis](chair-analysis.md) follows the dependent
+support records, assignments and cache rules. [Host integration][integration-issue]
+remains a separate workflow; live requirements and acceptance remain with
 their upstream owners.
 
 The [terminology register][terms] accepts **plain line**, S&C and
@@ -687,7 +688,6 @@ ASD-STE100 Issue 9 and TT-DOC-001 conformance are not verified.
 
 [revision]: https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf
 [integration-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/24
-[chair-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/21
 [terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#L1-L92
 [analysis-defaults]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L25364-L25394
 [resolution-defaults]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L25417-L25563
