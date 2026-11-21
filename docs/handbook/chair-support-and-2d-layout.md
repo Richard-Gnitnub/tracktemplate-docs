@@ -29,12 +29,13 @@ the final 2D representation revision is **2**.
 [Host loader][host-loader]; [B16 installation][b16-install];
 [schema][schema]; [representation revision][representation-revision]
 
-The source labels `S1`, `S1J`, `ordinary` and `joint` identify inherited
+The source chair labels `S1` and `S1J` and family values
+`ordinary running-rail chair` and `rail-joint support` identify inherited
 implementation cases. They do not resolve the register's support taxonomy,
 provisional S1 designation or independent prototype identification. A passed
 envelope check does not establish measured chair–rail physical fit or
-production acceptance. [Terminology states][terms];
-[chair evidence and physical-fit meanings][chair-terms]
+production acceptance. [Family declarations](https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L35488-L35501);
+[Terminology states][terms]; [chair evidence and physical-fit meanings][chair-terms]
 
 ## Follow the explicit support and layout controls
 
