@@ -14,6 +14,9 @@ the switch-toe position through the host alignment, source geometry and
 transactional changes to a managed turnout. [Crossover geometry and
 preflight](crossover-geometry.md) then connects two mapped C10s and checks
 the complete resulting radius before native construction.
+[Turnout–crossover conversion](turnout-crossover-conversion.md) explains
+how their identities and original output options survive a reversible
+replacement, including the limits of older stored records.
 
 ```{toctree}
 :maxdepth: 1
@@ -28,6 +31,7 @@ Assembly and fixing <assembly-and-fixing>
 Transition editing <transition-edit>
 C10 turnout placement and editing <turnout-placement-and-editing>
 Crossover geometry and preflight <crossover-geometry>
+Turnout–crossover conversion <turnout-crossover-conversion>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.
