@@ -737,7 +737,7 @@ copies, not a new visible-GUI run or whole-product acceptance. It gives
 no acceptance for performance, physical fit or production output.
 [Retained evidence][reuse-evidence]
 
-[Model timber support and 2D layout][layout-issue] and
+[Model timber support and 2D layout](chair-support-and-2d-layout.md) and
 [3D export-chair construction][solids-issue] remain separate workflows.
 Live requirements, runtime qualification and product acceptance stay
 with their upstream owners. The [terminology register][chair-terms]
@@ -746,7 +746,6 @@ tables into approved prototype definitions. Formal ASD-STE100 Issue 9
 and TT-DOC-001 conformance are not verified.
 
 [revision]: https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf
-[layout-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/22
 [solids-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/23
 [terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#L52-L68
 [chair-terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#L188-L214

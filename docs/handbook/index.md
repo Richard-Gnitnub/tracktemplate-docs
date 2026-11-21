@@ -23,6 +23,9 @@ automatic previews.
 [Chair-position analysis](chair-analysis.md) follows a rail–timber support
 through source assignment and an analytical footprint, then explains
 current-input signatures, stale results and guarded reuse.
+[Model timber support and 2D layout](chair-support-and-2d-layout.md) then
+follows the rotated support envelope through bounded side extensions,
+effective timber outlines, failed-fit overlays and display reuse.
 
 ```{toctree}
 :maxdepth: 1
@@ -40,6 +43,7 @@ Crossover geometry and preflight <crossover-geometry>
 Turnout–crossover conversion <turnout-crossover-conversion>
 Crossover timber analysis and resolution <crossover-timbering>
 Chair-position analysis and cache reuse <chair-analysis>
+Model timber support and 2D chair layout <chair-support-and-2d-layout>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.

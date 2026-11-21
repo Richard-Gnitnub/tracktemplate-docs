@@ -23,3 +23,9 @@ html[data-theme="dark"] {
 .bd-article li {
   line-height: 1.65;
 }
+
+/* Keep this chapter's long identifiers readable in a narrow article column. */
+#model-timber-support-and-the-lightweight-2d-chair-layout code.literal span.pre {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
