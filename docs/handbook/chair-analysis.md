@@ -132,9 +132,9 @@ The shared dialogue also enables **Calculate model timber support
 allowances**, **Apply small model-only timber widening automatically** and
 **Reuse analysis and supported solids when signatures match** by default.
 Position markers default to visible; protected markers, footprints,
-physical solids and unresolved markers default to hidden. Analysis can
-calculate a support recommendation; the separate support-preparation
-operation owns application of an allowance.
+physical solids and unresolved markers default to hidden. Analysis records
+a read-only support recommendation with
+`applied_to_production_geometry=False`.
 [Settings controls][settings-dialogue]; [recommendation calculation][support-recommendation]
 
 Normalisation fills missing defaults, converts numeric values to floats,
@@ -265,7 +265,7 @@ These are implementation classifications. The terminology register keeps
 the S1 designation provisional and the ordinary-chair taxonomy under
 review. A nonzero special-chair code does not resolve the final subtype.
 [Assignment][assignment]; [code catalogue][codes]; [deferred mappings][deferred];
-[terminology scope][chair-terms]
+[terminology states][terms]; [chair-term limits][chair-terms]
 
 After generation, pairwise clearance refinement can replace selected
 closure/S13 S1 positions with L1 bridge-chair candidates. Those candidates
@@ -626,7 +626,7 @@ preserved the document. [Physical wrapper][physical-wrapper];
 | Change before an explicit Analyse | Signature | Earliest B16 return | Retained operation when needed |
 | --- | --- | --- | --- |
 | Inputs, complete settings, metadata and live display stay current | Same | Eligible | No fallback needed. |
-| Change only a visibility checkbox | Same | Declined: requested settings differ from saved settings. | Can reuse logical positions, then save settings and update or rebuild display. |
+| Change only one of the three analytical visibility checkboxes | Same | Declined: requested settings differ from saved settings. | Can reuse logical positions, then save settings and update or rebuild display. |
 | Hide a marker directly while saved settings still request visibility | Same | Declined: live presentation disagrees. | Can reuse logical positions and restore requested visibility. |
 | Delete a requested diagnostic layer | Same | Declined: presentation is incomplete. | Can reuse logical positions and reconstruct display. |
 | Change a listed rail point, timber axis, identity or relevant source field | Different | Declined | Calculate a fresh logical result. |
@@ -642,7 +642,8 @@ not establish an unchanged-document operation.
 
 ## Read presentation and saved state correctly
 
-Directly toggling a panel visibility checkbox calls
+Toggling **Show chair-position markers**, **Show protected chair positions**
+or **Show analytical chair footprints** calls
 `set_chair_analysis_visibility`. Existing layers receive visibility
 changes. If a requested layer is missing, the helper reads cached data,
 applies display choices to a local copy, rebuilds display and recomputes.
