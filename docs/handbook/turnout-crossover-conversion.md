@@ -440,10 +440,10 @@ These conversions reorganise current model geometry and record identities;
 they do not automatically complete crossover timber resolution, qualify
 chairs, integrate railway hosts or provide production output clearance.
 The forward crossover initially marks timber resolution and production
-readiness as incomplete. The related
-[crossover timber chapter issue][timber-issue] and
-[host integration chapter issue][integration-issue] own the rest of that
-story. The wiki remains the development journal rather than this handbook's
+readiness as incomplete. The
+[crossover timbering chapter](crossover-timbering.md) explains the next
+resolution stages; [host integration][integration-issue] remains a separate
+handbook task. The wiki remains the development journal rather than this handbook's
 source of chronology.
 
 The upstream [terminology register][terms] accepts S&C and
@@ -487,5 +487,4 @@ conformance has not been verified.**
 [reverse-commit]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/model_railway_curve_template_multitrack_v10_2a8a7b15_chair_performance_and_representation.FCMacro#L29580-L29663
 [preflight]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tracktemplate/compatibility/crossover_preflight.py
 [terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#current-contextual-register
-[timber-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/20
 [integration-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/24

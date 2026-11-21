@@ -17,6 +17,9 @@ the complete resulting radius before native construction.
 [Turnout–crossover conversion](turnout-crossover-conversion.md) explains
 how their identities and original output options survive a reversible
 replacement, including the limits of older stored records.
+[Crossover timbering](crossover-timbering.md) follows source supports through
+conflict analysis, shared envelopes, controlled movement and reversible
+automatic previews.
 
 ```{toctree}
 :maxdepth: 1
@@ -32,6 +35,7 @@ Transition editing <transition-edit>
 C10 turnout placement and editing <turnout-placement-and-editing>
 Crossover geometry and preflight <crossover-geometry>
 Turnout–crossover conversion <turnout-crossover-conversion>
+Crossover timber analysis and resolution <crossover-timbering>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.

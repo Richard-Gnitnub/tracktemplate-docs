@@ -350,9 +350,11 @@ will succeed.
   historical sources, not newly run here. No new native Part or real-GUI
   validation was performed for this chapter.
 
-[Turnout–crossover conversion](turnout-crossover-conversion.md), [timber analysis][timber-issue],
-[host integration][integration-issue] and [production preflight][production-issue]
-have separate handbook tasks. The upstream [terminology register][terms]
+[Turnout–crossover conversion](turnout-crossover-conversion.md) and
+[crossover timber analysis and resolution](crossover-timbering.md) have
+separate walkthroughs. [Host integration][integration-issue] and
+[production preflight][production-issue] remain separate handbook tasks.
+The upstream [terminology register][terms]
 accepts S&C and contextual station/chainage while retaining
 `switch/points/turnout`, `crossing/vee/frog` and `sleeper/timber` distinctions
 as review-required. This page uses inherited labels for the observed
@@ -371,6 +373,5 @@ ASD-STE100 Issue 9 conformance.
 [runtime-test]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tests/freecad_validate_phase8_crossover_preflight.py
 [gui-proof]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/tools/freecad_bridge/run_phase8_crossover_preflight_gui.py
 [terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#current-contextual-register
-[timber-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/20
 [integration-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/24
 [production-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/32
