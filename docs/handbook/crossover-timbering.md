@@ -85,10 +85,12 @@ adapter at this revision. [Handlers][controls]; [final B4 binding][adapter-bindi
 | Automatic B4 | **Resolve crossover timbering automatically** | **Show automatic resolution details** | **Show final resolved timbering**; **Remove automatic timbering result** |
 
 Analysis requires a selected crossover. Shared-envelope and B4 application
-also require that host integration is inactive. B3 requires an existing,
-current shared result. Removal and visibility controls require their
-corresponding stored result and are disabled while integrated; details
-remain available. Remove integration before changing the arrangement.
+also require that host integration is inactive. B3 application additionally
+requires an existing, current shared result. Arrangement removal and
+visibility controls require their corresponding stored result and are
+disabled while integrated; their details remain available. Analysis and
+its diagnostic display controls remain enabled for a selected crossover.
+Remove integration before changing the arrangement.
 There is no separate B4 settings dialogue: automatic application uses the
 current shared-envelope and B3 settings, plus its display choice.
 [Enablement][enablement]; [handlers and dialogues][controls]
@@ -392,9 +394,7 @@ relaxing the configured width allowance.
 Return to B's original centre at x = 1. For the declared equal-width,
 parallel pair, B3 requires centre spacing
 
-\[
-\frac{2+2}{2}+0.50=2.50\ \mathrm{mm}.
-\]
+**(2 + 2) / 2 + 0.50 = 2.50 mm.**
 
 The current spacing is 1.00 mm, so the additional separation must be
 **1.50 mm**. In the outward symmetric search, moving A by **−0.75 mm**
@@ -428,10 +428,11 @@ This variant can also add a protected-support finding in the initial
 analysis. It does not establish a whole-result unresolved count.
 [Strict allowance][b3-protection]; [failure retention][b3-search]
 
-The committed [figure tool][figure-tool] checks this rectangle arithmetic
-without importing the workbench or running its solver. From the
-documentation repository, this command checks the values and the saved
-figure without changing files:
+The committed
+{download}`figure tool <../../tools/render_crossover_timber_figure.py>`
+checks this rectangle arithmetic without importing the workbench or running
+its solver. From the documentation repository, this command checks the
+values and the saved figure without changing files:
 
 ```bash
 python tools/render_crossover_timber_figure.py --check-only
@@ -533,11 +534,14 @@ leave its records, gaps and protected-support obligations unchanged.
 
 The application operations combine numeric records, document objects and
 stored results. Their names do not mean that host integration has already
-occurred. Successful B4 application constructs or updates its preview,
-hides earlier displays, stores complete B4/analysis metadata and rebuilds
-diagnostic markers. Earlier shared/B3 objects can remain hidden; the
-automatic calculation does not necessarily create separate intermediate
-preview objects. [B4 application][b4-apply]
+occurred. When B4 calculates a new result, application constructs or updates
+its preview, hides earlier displays, stores complete B4/analysis metadata
+and rebuilds diagnostic markers. Earlier shared/B3 objects can remain
+hidden; the automatic calculation does not necessarily create separate
+intermediate preview objects. If the stored result, settings and existing
+object are current, the inherited application can instead reuse them
+without solving or opening an application transaction.
+[B4 application][b4-apply]
 
 | Removal command | Effective arrangement and display restored |
 | --- | --- |
@@ -555,9 +559,9 @@ which depends on document transaction/history behaviour.
 
 ### Respect the actual transaction boundaries
 
-B4 application validates inputs, resolves records and prepares its shape
-before opening the application transaction. It clears dependent chair
-display inside that transaction:
+On the calculation path, B4 application validates inputs, resolves records
+and prepares its shape before opening the application transaction. It
+clears dependent chair display inside that transaction:
 
 ```python
 doc.openTransaction("Apply Version {} hybrid timbering {}".format(MACRO_VERSION_NUMBER, identifier))
@@ -582,7 +586,7 @@ universally call a chair-analysis invalidator. Instead, later effective
 status checks compare current inputs with the stored signature. Chair
 analysis obtains crossover supports through the same effective-record
 selector described above.
-[Final cleanup binding][chair-cleanup]; [2D cleanup layer][chair-cleanup-2d];
+[Final cleanup binding][chair-cleanup]; [unresolved-marker cleanup][chair-cleanup-2d];
 [chair timber input][chair-input];
 [chair effective status][chair-status]
 
@@ -682,7 +686,6 @@ classifications without approving a new prototype taxonomy. Formal
 ASD-STE100 Issue 9 and TT-DOC-001 conformance are not verified.
 
 [revision]: https://github.com/Richard-Gnitnub/tracktemplate/tree/7965bfc4671668f889c1f43fb8336c5146c3f5cf
-[figure-tool]: https://github.com/Richard-Gnitnub/tracktemplate-docs/blob/main/tools/render_crossover_timber_figure.py
 [integration-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/24
 [chair-issue]: https://github.com/Richard-Gnitnub/tracktemplate-docs/issues/21
 [terms]: https://github.com/Richard-Gnitnub/tracktemplate/blob/7965bfc4671668f889c1f43fb8336c5146c3f5cf/reference/TERMINOLOGY.md#L1-L92
