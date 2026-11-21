@@ -97,8 +97,10 @@ step**. Select **Show specialist and maintenance controls** to expose the
 individual Create, Edit, Apply, Cancel, Remove and integration buttons. The
 final guided-step method is a later B15 replacement (`_turnout_run_next_guided_step_v13`);
 it calls the same creation and edit handlers, then proceeds to chair analysis,
-model support, 2D validation and possible host integration. Those later stages
-have separate coverage. [Guided final binding][guided];
+model support, 2D validation and possible host integration.
+[Chair-position analysis](chair-analysis.md) explains the dependent support
+records, assignments and cache rules. The remaining stages have separate
+coverage. [Guided final binding][guided];
 [GUI coverage](../gui-coverage.md)
 
 ## From a natural C10 to a curved host

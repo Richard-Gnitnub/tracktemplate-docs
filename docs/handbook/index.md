@@ -20,6 +20,9 @@ replacement, including the limits of older stored records.
 [Crossover timbering](crossover-timbering.md) follows source supports through
 conflict analysis, shared envelopes, controlled movement and reversible
 automatic previews.
+[Chair-position analysis](chair-analysis.md) follows a rail–timber support
+through source assignment and an analytical footprint, then explains
+current-input signatures, stale results and guarded reuse.
 
 ```{toctree}
 :maxdepth: 1
@@ -36,6 +39,7 @@ C10 turnout placement and editing <turnout-placement-and-editing>
 Crossover geometry and preflight <crossover-geometry>
 Turnout–crossover conversion <turnout-crossover-conversion>
 Crossover timber analysis and resolution <crossover-timbering>
+Chair-position analysis and cache reuse <chair-analysis>
 ```
 
 [GUI coverage](../gui-coverage.md) identifies the explanations still needed.
